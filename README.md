@@ -2,7 +2,7 @@
 
 ## Overview
 
-Anole is a web-based application aimed at empowering homeowners with comprehensive information about green and clean energy solutions. Our platform is dedicated to making sustainable living accessible and understandable, providing users with personalized recommendations and insights into energy-efficient practices for their homes.
+Stelio is a web-based application aimed at empowering homeowners with comprehensive information about green and clean energy solutions. Our platform is dedicated to making sustainable living accessible and understandable, providing users with personalized recommendations and insights into energy-efficient practices for their homes.
 
 ## Features
 
@@ -22,7 +22,7 @@ Anole is a web-based application aimed at empowering homeowners with comprehensi
 
 ## Color Scheme and Branding
 
-- Anole's color scheme includes shades of pink, green, black, and white. [Color Scheme Link](https://coolors.co/393d3f-ffffff-d0629b-5fad56)
+- Stelio's color scheme includes shades of pink, green, black, and white. [Color Scheme Link](https://coolors.co/393d3f-ffffff-d0629b-5fad56)
 
 ## Pages
 
@@ -35,4 +35,4 @@ Anole is a web-based application aimed at empowering homeowners with comprehensi
 
 ## Mission
 
-At Anole, we are committed to providing homeowners with the knowledge and tools they need to transition towards more sustainable, energy-efficient homes. Our platform simplifies the process of understanding and implementing green energy solutions, contributing to a healthier environment.
+At Stelio, we are committed to providing homeowners with the knowledge and tools they need to transition towards more sustainable, energy-efficient homes. Our platform simplifies the process of understanding and implementing green energy solutions, contributing to a healthier environment.
