@@ -34,7 +34,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-2">
               <Link
                 href="/"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500"
+                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Overview
               </Link>
@@ -42,7 +42,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-2">
               <Link
                 href="/"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500"
+                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Get Started
               </Link>
@@ -50,7 +50,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-2">
               <Link
                 href="/"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500"
+                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Technologies
               </Link>
@@ -58,7 +58,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-2">
               <Link
                 href="/"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500"
+                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Enterprise
               </Link>
@@ -75,7 +75,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-2">
               <Link
                 href="/"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500"
+                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Overview
               </Link>
@@ -83,7 +83,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-2">
               <Link
                 href="/"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500"
+                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Cost-Cutting
               </Link>
@@ -91,7 +91,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-2">
               <Link
                 href="/"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500"
+                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Case Studies
               </Link>
@@ -100,7 +100,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-2">
               <Link
                 href="/"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500"
+                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Open Source
               </Link>
@@ -117,7 +117,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-2">
               <Link
                 href="/"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500"
+                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Copyright
               </Link>
@@ -125,7 +125,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-2">
               <Link
                 href="/"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500"
+                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 CTE
               </Link>
@@ -133,7 +133,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-2">
               <Link
                 href="/"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500"
+                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Citations 
               </Link>
@@ -141,7 +141,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-2">
               <Link
                 href="/"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500"
+                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Plan of Work Log
               </Link>
@@ -150,7 +150,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-2">
               <Link
                 href="https://tsaweb.org"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500"
+                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 NTSA 
               </Link>
@@ -167,7 +167,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-2">
               <Link
                 href="/"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500"
+                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 About
               </Link>
@@ -175,7 +175,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-2">
               <Link
                 href="/"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500"
+                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Initiative
               </Link>
@@ -183,7 +183,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-2">
               <Link
                 href="/"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500"
+                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Blog 
               </Link>
@@ -191,7 +191,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-2">
               <Link
                 href="/"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500"
+                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Customer Stories
               </Link>
@@ -199,7 +199,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-2">
               <Link
                 href="/"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500"
+                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Careers
               </Link>
@@ -219,8 +219,8 @@ export default function Footer() {
           <ul className="flex flex-col flex-initial md:flex-1">
             <li className="py-3 md:py-0 md:pb-4 px-10">
               <Link
-                href="/"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500"
+                href="/policies/privacy-policy"
+                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Privacy Policy
               </Link>
@@ -232,7 +232,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4 px-0 pr-5">
               <Link
                 href="/"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500"
+                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Terms of Use
               </Link>
@@ -243,8 +243,20 @@ export default function Footer() {
           <ul className="flex flex-col flex-initial md:flex-1">
             <li className="py-3 md:py-0 md:pb-4 px-5">
               <Link
+                href="/sitemap.xml"
+                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
+              >
+                Site Map  
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="col-span-1 lg:col-span-2">
+          <ul className="flex flex-col flex-initial md:flex-1">
+            <li className="py-3 md:py-0 md:pb-4 px-5">
+              <Link
                 href="https://x.com/fltsa"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500"
+                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 X  
               </Link>
@@ -256,7 +268,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4 px-5">
               <Link
                 href="https://instagram.com/fltsa"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500"
+                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                  Instagram 
               </Link>
@@ -269,7 +281,7 @@ export default function Footer() {
               <Link
                 href="https://github.com/degstn/anole
                 "
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500"
+                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 GitHub  
               </Link>

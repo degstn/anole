@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 50px;
+  }
+  
+  .left {
+    flex: 1;
+  }
+  
+  .right {
+    flex: 1;
+  }
+  
+  .errorCode {
+    font-size: 10em;
+  }
+  
+  .errorMessage {
+    margin-bottom: 20px;
+  }
