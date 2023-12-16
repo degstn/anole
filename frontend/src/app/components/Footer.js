@@ -27,7 +27,7 @@ export default function Footer() {
         <div className="col-span-1 lg:col-span-2">
           <ul className="flex flex-col flex-initial md:flex-1">
           <li className="py-3 md:py-0 md:pb-2">
-              <p className="font-bold text-black">
+              <p className="font-bold">
                 Product
               </p>
             </li>
@@ -68,7 +68,7 @@ export default function Footer() {
         <div className="col-span-1 lg:col-span-2">
           <ul className="flex flex-col flex-initial md:flex-1">
           <li className="py-3 md:py-0 md:pb-2">
-              <p className="font-bold text-black">
+              <p className="font-bold">
                 Research
               </p>
             </li>
@@ -110,7 +110,7 @@ export default function Footer() {
         <div className="col-span-1 lg:col-span-2">
           <ul className="flex flex-col flex-initial md:flex-1">
           <li className="py-3 md:py-0 md:pb-2">
-              <p className="font-bold text-black">
+              <p className="font-bold">
                 Documentation
               </p>
             </li>
@@ -160,7 +160,7 @@ export default function Footer() {
         <div className="col-span-1 lg:col-span-2">
           <ul className="flex flex-col flex-initial md:flex-1">
           <li className="py-3 md:py-0 md:pb-2">
-              <p className="font-bold text-black">
+              <p className="font-bold">
                 Company
               </p>
             </li>
