@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Footer() {
   return (
     <footer className="mx-auto max-w-[1920px] px-6 bg-zinc-900 bg-opacity-0">
-      <div className="grid grid-cols-1 gap-8 py-12 pb-20 text-gray-500 transition-colors duration-150 border-b lg:grid-cols-12 border-zinc-600 bg-zinc-900 bg-opacity-0">
+      <div className="grid grid-cols-1 gap-8 py-12 pb-20 transition-colors duration-150 border-b lg:grid-cols-12 border-zinc-600 bg-zinc-900 bg-opacity-0">
         <div className="col-span-1 lg:col-span-2">
           <Link
             href="/"
