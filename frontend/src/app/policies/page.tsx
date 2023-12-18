@@ -3,24 +3,24 @@ export default function Page() {
     return (
       <main className="flex min-h-screen flex-col items-start justify-between">
         <div className="mx-6">
-    <h1 className="text-5xl font-regular mb-16 mt-20">Privacy policy</h1>
+    <h1 className="text-5xl font-regular mb-16 mt-20">Terms & policies</h1>
     <hr className="border-t border-black w-full" />
         <div className="mr-72">
-            <p className="font-semibold  mt-2">
-                Updated
+            <p className="text-xl font-semibold mt-2">
+                Legal
             </p>
-            <p className="font-regular  mt-0">
+            <p className="font-regular mt-0">
                 December 14, 2023
             </p>
 
-            <h1 className="text-2xl font-semibold  mt-20">
+            <h1 className="text-2xl font-semibold mt-20">
                 1. Personal information we collect
             </h1>
-            <p className="text-base font-regular  mt-3 mb-3">
+            <p className="text-base font-regular mt-3 mb-3">
                 We collect Device Information using the following technologies:
             </p>
 
-            <p className="text-base font-regular  mt-3 mb-3">
+            <p className="text-base font-regular mt-3 mb-3">
                 Personal Information You Provide: We collect Personal Information if you create an account to use our Services or communicate with us as follows:
             </p>
             <p className="text-base font-regular  mt-3 mb-3">    
@@ -40,17 +40,17 @@ export default function Page() {
                 </ul>
             </p>
 
-            <h1 className="text-2xl font-semibold  mt-20">
+            <h1 className="text-2xl font-semibold mt-20">
                 2. Usage of personal inforamtion
             </h1>
-            <p className="text-base font-regular  mt-3 mb-3">
+            <p className="text-base font-regular mt-3 mb-3">
                 We collect Device Information using the following technologies:
             </p>
 
-            <p className="text-base font-regular  mt-3 mb-3">
+            <p className="text-base font-regular mt-3 mb-3">
                 Personal Information You Provide: We collect Personal Information if you create an account to use our Services or communicate with us as follows:
             </p>
-            <p className="text-base font-regular  mt-3 mb-3">    
+            <p className="text-base font-regular mt-3 mb-3">    
                 <ul className="list-disc list-inside">
                     <li>
                 “Cookies” are data files that are placed on your device or computer and often include an anonymous unique identifier. For more information about cookies, and how to disable cookies, visit http://www.allaboutcookies.org.

@@ -219,10 +219,10 @@ export default function Footer() {
           <ul className="flex flex-col flex-initial md:flex-1">
             <li className="py-3 md:py-0 md:pb-4 px-10">
               <Link
-                href="/policies/privacy-policy"
+                href="/policies"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
-                Privacy Policy
+                Terms & policies
               </Link>
             </li>
           </ul>
@@ -231,10 +231,10 @@ export default function Footer() {
           <ul className="flex flex-col flex-initial md:flex-1">
             <li className="py-3 md:py-0 md:pb-4 px-0 pr-5">
               <Link
-                href="/"
+                href="/policies/privacy-policy"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
-                Terms of Use
+                Privacy policy
               </Link>
             </li>
           </ul>
