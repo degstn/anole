@@ -15,7 +15,7 @@ export default function Footer() {
         <source srcSet="/steliologov1sd.svg" media="(prefers-color-scheme: dark)" />
         <Image
             src="/steliologov1s.svg"
-            alt="My image"
+            alt="Stelio Logo"
             width={100}
             height={100}
         />
@@ -148,12 +148,18 @@ export default function Footer() {
             </li>
             {/* need an arrow icon for external site link */}
             <li className="py-3 md:py-0 md:pb-2">
-              <Link
+              <a
                 href="https://tsaweb.org"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
-                NTSA 
-              </Link>
+                <span className="flex items-center">
+                  <span>NTSA</span>
+                  <span className="ml-1 mt-1.5">
+                  <ArrowIcon />
+                  </span>
+                </span>
+              </a>
+              
             </li>
           </ul>
         </div>
@@ -296,9 +302,9 @@ export default function Footer() {
 function ArrowIcon() {
     return (
       <svg
-        width="12"
-        height="12"
-        viewBox="0 0 12 12"
+        width="15"
+        height="15"
+        viewBox="0 0 16 16"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >

@@ -8,7 +8,7 @@ export default function Home() {
         <source srcSet="/steliologov1sd.svg" media="(prefers-color-scheme: dark)" />
         <Image
             src="/steliologov1s.svg"
-            alt="My image"
+            alt="Stelio Logo"
             width={250}
             height={100}
         />
