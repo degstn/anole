@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import { Suspense } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useState } from 'react'; 
 
 const navItems = {
   '/product': {
@@ -18,40 +19,64 @@ const navItems = {
   },
 };
 
-export function Navbar() {
+const  Navbar = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const MobileNav = () => {
+    setIsOpen(!isOpen);
+  }
+
   return (
-    <header className="flex items-center justify-between py-5 px-10">
-      <div>
-        <Link href="/">
-          <div className="flex items-center justify-between">
-            <div className="mr-3">
-            <picture>
-              <source srcSet="/steliologov1sd.svg" media="(prefers-color-scheme: dark)" />
-              <Image
-                  src="/steliologov1s.svg"
-                  alt="Stelio Logo"
-                  width={100}
-                  height={100}
-              />
-            </picture>
+    <nav className="fixed w-full py-5 px-10">
+      <div className="flex items-center justify-between">
+        <div>
+          <Link href="/">
+            <div>
+              <picture>
+                <source srcSet="/steliologov1sd.svg" media="(prefers-color-scheme: dark)" />
+                <Image
+                    src="/steliologov1s.svg"
+                    alt="Stelio Logo"
+                    width={100}
+                    height={100}
+                />
+              </picture>
             </div>
-          </div>
-        </Link>
+          </Link>
+        </div>
+
+        <div className="hidden md:flex items-center space-x-4 leading-5">
+            <Suspense fallback={null}>
+                {Object.entries(navItems).map(([path, { name }]) => {
+                  return <NavItem key={path} path={path} name={name} />;
+                })}
+            </Suspense>
+        </div>
+        <div onClick={MobileNav} className="md:hidden overscroll-none">
+          <OpenMenu />
+        </div>
+        <div className={
+          isOpen 
+          ? "fixed left-0 top-0 bg-white dark:bg-neutral-900 h-screen w-screen overscroll-none" 
+          : "hidden"
+          }
+          >
+          <div className="flex w-full items-center justify-end pt-5 pr-10">
+            <div onClick={MobileNav}>
+              <CloseMenu />
+            </div>
+            </div>
+            <div className="flex-col text-4xl font-semibold py-10 px-3">
+            <Suspense fallback={null}>
+                {Object.entries(navItems).map(([path, { name }]) => {
+                  return <NavItem key={path} path={path} name={name} />;
+                })}
+            </Suspense>
+            </div>
+        </div>
       </div>
-      <div className="flex items-center space-x-4 leading-5 sm:space-x-6">
-          <Suspense fallback={null}>
-              {Object.entries(navItems).map(([path, { name }]) => {
-                return <NavItem key={path} path={path} name={name} />;
-              })}
-          </Suspense>
-          {/* 
-          TODO: will add these for responsiveness when i feel like it 
-          */}
-        {/* <SearchButton />
-        <ThemeSwitch />
-        <MobileNav /> */}
-      </div>
-    </header>
+    </nav>
   );
 }
 
@@ -70,7 +95,7 @@ function NavItem({ path, name }: { path: string; name: string }) {
         'transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle'
       
     >
-      <span className="relative py-1 px-2">
+      <span className="relative py-3 px-2">
         {name}
         {path === pathname ? (
           <motion.div
@@ -87,3 +112,41 @@ function NavItem({ path, name }: { path: string; name: string }) {
     </Link>
   );
 }
+
+function OpenMenu() {
+  return (
+    <svg 
+      width="40" 
+      height="40" 
+      viewBox="0 0 40 40" 
+      fill="none" 
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path 
+        d="M5.418 25.375v-2.083h29.166v2.083H5.418Zm0-8.667v-2.083h29.166v2.083H5.418Z" 
+        fill="#000000"
+      />
+    </svg>
+
+
+  );
+}
+
+function CloseMenu() {
+  return (
+    <svg 
+      width="40" 
+      height="40" 
+      viewBox="0 0 40 40" 
+      fill="none" 
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path 
+        d="m10.543 30.958-1.5-1.5 9.5-9.458-9.5-9.458 1.5-1.5 9.458 9.5 9.458-9.5 1.5 1.5-9.5 9.458 9.5 9.458-1.5 1.5-9.458-9.5-9.458 9.5Z" 
+        fill="#000000"
+        />
+    </svg>
+  );
+}
+
+export default Navbar;
