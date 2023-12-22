@@ -29,7 +29,7 @@ const  Navbar = () => {
 
   return (
     <nav className="fixed w-full py-5 px-10">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between mix-blend-difference">
         <div>
           <Link href="/">
             <div>
@@ -92,14 +92,14 @@ function NavItem({ path, name }: { path: string; name: string }) {
       key={path}
       href={path}
       className=
-        'transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle'
+        'transition-all hover:underline underline-offset-4 hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle'
       
     >
       <span className="relative py-3 px-2">
         {name}
         {path === pathname ? (
           <motion.div
-            className="absolute h-[1px] top-7 mx-2 inset-0 bg-black dark:bg-neutral-800 z-[-1] dark:bg-gradient-to-r from-transparent to-neutral-900"
+            className="absolute h-[1px] top-8 mx-2 inset-0 bg-black dark:bg-neutral-800 z-[-1] dark:bg-gradient-to-r from-transparent to-neutral-900"
             layoutId="sidebar"
             transition={{
               type: 'spring',
@@ -143,7 +143,7 @@ function CloseMenu() {
     >
       <path 
         d="m10.543 30.958-1.5-1.5 9.5-9.458-9.5-9.458 1.5-1.5 9.458 9.5 9.458-9.5 1.5 1.5-9.5 9.458 9.5 9.458-1.5 1.5-9.458-9.5-9.458 9.5Z" 
-        fill="#000000"
+        fill="currentFill"
         />
     </svg>
   );
