@@ -17,6 +17,9 @@ const navItems = {
   '/company': {
     name: 'Company',
   },
+  '/careers': {
+    name: 'Careers',
+  },
 };
 
 const  Navbar = () => {

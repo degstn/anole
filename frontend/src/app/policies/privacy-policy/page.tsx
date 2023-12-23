@@ -3,7 +3,7 @@ export default function Page() {
     return (
       <main className="flex min-h-screen flex-col items-stretch justify-between">
         <div className="mx-6">
-    <h1 className="text-5xl font-regular mb-16 mt-20">Privacy policy</h1>
+    <h1 className="text-5xl font-regular mb-16 mt-52">Privacy policy</h1>
     <hr className="border-t border-black w-full" />
         <div className="mr-72">
             <p className="font-semibold  mt-2">
