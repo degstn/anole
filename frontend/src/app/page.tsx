@@ -5,7 +5,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-25 ">
       <div className="flex flex-col items-center min-h-[calc(100vh-44px)] justify-center">
       <picture>
-        <source srcSet="/steliologov1sd.svg" /*media="(prefers-color-scheme: dark)"*/ />
+        {/* <source srcSet="/steliologov1sd.svg" media="(prefers-color-scheme: dark)" /> */}
         <Image
             src="/steliologov1s.svg"
             alt="Stelio Logo"
