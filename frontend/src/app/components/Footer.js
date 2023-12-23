@@ -26,12 +26,12 @@ export default function Footer() {
         </div>
         <div className="col-span-1 lg:col-span-2">
           <ul className="flex flex-col flex-initial md:flex-1">
-          <li className="py-3 md:py-0 md:pb-2">
+          <li className="sm:py-0 md:py-0 md:pb-2">
               <p className="font-bold">
                 Product
               </p>
             </li>
-            <li className="py-3 md:py-0 md:pb-2">
+            <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
                 href="/"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
@@ -39,7 +39,7 @@ export default function Footer() {
                 Overview
               </Link>
             </li>
-            <li className="py-3 md:py-0 md:pb-2">
+            <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
                 href="/"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
@@ -47,7 +47,7 @@ export default function Footer() {
                 Get Started
               </Link>
             </li>
-            <li className="py-3 md:py-0 md:pb-2">
+            <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
                 href="/"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
@@ -55,7 +55,7 @@ export default function Footer() {
                 Technologies
               </Link>
             </li>
-            <li className="py-3 md:py-0 md:pb-2">
+            <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
                 href="/"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
@@ -67,12 +67,12 @@ export default function Footer() {
         </div>
         <div className="col-span-1 lg:col-span-2">
           <ul className="flex flex-col flex-initial md:flex-1">
-          <li className="py-3 md:py-0 md:pb-2">
+          <li className="sm:py-0 md:py-0 md:pb-2">
               <p className="font-bold">
                 Research
               </p>
             </li>
-            <li className="py-3 md:py-0 md:pb-2">
+            <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
                 href="/"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
@@ -80,7 +80,7 @@ export default function Footer() {
                 Overview
               </Link>
             </li>
-            <li className="py-3 md:py-0 md:pb-2">
+            <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
                 href="/"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
@@ -88,7 +88,7 @@ export default function Footer() {
                 Cost-Cutting
               </Link>
             </li>
-            <li className="py-3 md:py-0 md:pb-2">
+            <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
                 href="/"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
@@ -97,7 +97,7 @@ export default function Footer() {
               </Link>
             </li>
             {/* need an arrow icon for external site link */}
-            <li className="py-3 md:py-0 md:pb-2">
+            <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
                 href="/"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
@@ -109,12 +109,12 @@ export default function Footer() {
         </div>
         <div className="col-span-1 lg:col-span-2">
           <ul className="flex flex-col flex-initial md:flex-1">
-          <li className="py-3 md:py-0 md:pb-2">
+          <li className="sm:py-0 md:py-0 md:pb-2">
               <p className="font-bold">
                 Documentation
               </p>
             </li>
-            <li className="py-3 md:py-0 md:pb-2">
+            <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
                 href="/"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
@@ -122,7 +122,7 @@ export default function Footer() {
                 Copyright
               </Link>
             </li>
-            <li className="py-3 md:py-0 md:pb-2">
+            <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
                 href="/"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
@@ -130,7 +130,7 @@ export default function Footer() {
                 CTE
               </Link>
             </li>
-            <li className="py-3 md:py-0 md:pb-2">
+            <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
                 href="/"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
@@ -138,7 +138,7 @@ export default function Footer() {
                 Citations 
               </Link>
             </li>
-            <li className="py-3 md:py-0 md:pb-2">
+            <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
                 href="/"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
@@ -147,7 +147,7 @@ export default function Footer() {
               </Link>
             </li>
             {/* need an arrow icon for external site link */}
-            <li className="py-3 md:py-0 md:pb-2">
+            <li className="sm:py-0 md:py-0 md:pb-2">
               <a
                 href="https://tsaweb.org"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
@@ -165,12 +165,12 @@ export default function Footer() {
         </div>
         <div className="col-span-1 lg:col-span-2">
           <ul className="flex flex-col flex-initial md:flex-1">
-          <li className="py-3 md:py-0 md:pb-2">
+          <li className="sm:py-0 md:py-0 md:pb-2">
               <p className="font-bold">
                 Company
               </p>
             </li>
-            <li className="py-3 md:py-0 md:pb-2">
+            <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
                 href="/"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
@@ -178,7 +178,7 @@ export default function Footer() {
                 About
               </Link>
             </li>
-            <li className="py-3 md:py-0 md:pb-2">
+            <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
                 href="/"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
@@ -186,7 +186,7 @@ export default function Footer() {
                 Initiative
               </Link>
             </li>
-            <li className="py-3 md:py-0 md:pb-2">
+            <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
                 href="/"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
@@ -194,7 +194,7 @@ export default function Footer() {
                 Blog 
               </Link>
             </li>
-            <li className="py-3 md:py-0 md:pb-2">
+            <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
                 href="/"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
@@ -202,7 +202,7 @@ export default function Footer() {
                 Customer Stories
               </Link>
             </li>
-            <li className="py-3 md:py-0 md:pb-2">
+            <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
                 href="/"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
@@ -213,7 +213,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-start py-0 pb-20 space-y-4 md:flex-row bg-zinc-900 bg-opacity-0">
+      <div className="flex flex-col lg:items-center md:items-center sm:items-start justify-start py-4 pb-20 space-y-4 md:flex-row bg-zinc-900 bg-opacity-0">
         <div>
           <span>
             <p className="text-gray-500">
@@ -221,78 +221,80 @@ export default function Footer() {
             </p>
           </span>
         </div>
+        <div className="text-xs">
+          <div className="col-span-1 lg:col-span-2">
+            <ul className="flex flex-col flex-initial md:flex-1">
+              <li className="">
+                <Link
+                  href="/policies"
+                  className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
+                >
+                  Terms & policies
+                </Link>
+              </li>
+            </ul>
+          </div>
         <div className="col-span-1 lg:col-span-2">
-          <ul className="flex flex-col flex-initial md:flex-1">
-            <li className="py-3 md:py-0 md:pb-4 px-10">
-              <Link
-                href="/policies"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
-              >
-                Terms & policies
-              </Link>
-            </li>
-          </ul>
-        </div>
-      <div className="col-span-1 lg:col-span-2">
-          <ul className="flex flex-col flex-initial md:flex-1">
-            <li className="py-3 md:py-0 md:pb-4 px-0 pr-5">
-              <Link
-                href="/policies/privacy-policy"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
-              >
-                Privacy policy
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="col-span-1 lg:col-span-2">
-          <ul className="flex flex-col flex-initial md:flex-1">
-            <li className="py-3 md:py-0 md:pb-4 px-5">
-              <Link
-                href="/sitemap.xml"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
-              >
-                Site Map  
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="col-span-1 lg:col-span-2">
-          <ul className="flex flex-col flex-initial md:flex-1">
-            <li className="py-3 md:py-0 md:pb-4 px-5">
-              <Link
-                href="https://x.com/fltsa"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
-              >
-                X  
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="col-span-1 lg:col-span-2">
-          <ul className="flex flex-col flex-initial md:flex-1">
-            <li className="py-3 md:py-0 md:pb-4 px-5">
-              <Link
-                href="https://instagram.com/fltsa"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
-              >
-                 Instagram 
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="col-span-1 lg:col-span-2">
-          <ul className="flex flex-col flex-initial md:flex-1">
-            <li className="py-3 md:py-0 md:pb-4 px-5">
-              <Link
-                href="https://github.com/degstn/anole
-                "
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
-              >
-                GitHub  
-              </Link>
-            </li>
-          </ul>
+            <ul className="flex flex-col flex-initial md:flex-1">
+              <li className="">
+                <Link
+                  href="/policies/privacy-policy"
+                  className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
+                >
+                  Privacy policy
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="col-span-1 lg:col-span-2">
+            <ul className="flex flex-col flex-initial md:flex-1">
+              <li className="">
+                <Link
+                  href="/sitemap.xml"
+                  className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
+                >
+                  Site Map  
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="col-span-1 lg:col-span-2">
+            <ul className="flex flex-col flex-initial md:flex-1">
+              <li className="">
+                <Link
+                  href="https://x.com/fltsa"
+                  className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
+                >
+                  X  
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="col-span-1 lg:col-span-2">
+            <ul className="flex flex-col flex-initial md:flex-1">
+              <li className="">
+                <Link
+                  href="https://instagram.com/fltsa"
+                  className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
+                >
+                  Instagram 
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="col-span-1 lg:col-span-2">
+            <ul className="flex flex-col flex-initial md:flex-1">
+              <li className="">
+                <Link
+                  href="https://github.com/degstn/anole
+                  "
+                  className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
+                >
+                  GitHub  
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
