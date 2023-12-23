@@ -37,7 +37,7 @@ const  Navbar = () => {
           <Link href="/">
             <div>
               <picture>
-                <source srcSet="/steliologov1sd.svg" media="(prefers-color-scheme: dark)" />
+                {/* <source srcSet="/steliologov1sd.svg" media="(prefers-color-scheme: dark)" /> */}
                 <Image
                     src="/steliologov1s.svg"
                     alt="Stelio Logo"
