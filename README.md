@@ -1,5 +1,7 @@
 # Stelio
 
+www.stelio.ai | https://anole.vercel.app
+
 ## Overview
 
 Stelio is a web-based application aimed at empowering homeowners with comprehensive information about green and clean energy solutions. Our platform is dedicated to making sustainable living accessible and understandable, providing users with personalized recommendations and insights into energy-efficient practices for their homes.
