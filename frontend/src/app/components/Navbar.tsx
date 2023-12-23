@@ -26,8 +26,8 @@ const navItems = {
 const  Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false);
-
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false); // New state variable
 
   const MobileNav = () => {
     setIsOpen(!isOpen);
@@ -45,9 +45,22 @@ const  Navbar = () => {
     }
   }, [isOpen]);
 
+  useEffect(() => { // New effect for handling scroll
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      setIsScrolled(isScrolled);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="fixed w-full py-5 px-10">
-      <div className="flex items-center justify-between mix-blend-difference">
+    <nav className={`navbar fixed w-full py-5 px-10 ${isScrolled ? 'scrolled' : ''}`}>
+      <div className={`flex items-center justify-between ${isScrolled ? 'text-black' : ''}`}>
         <div>
           <Link href="/">
             <div>

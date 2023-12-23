@@ -1,3 +1,12 @@
 .no-scroll {
     overflow: hidden;
   }
+
+  .navbar {
+    transition: background-color 0.5s ease-out;
+    background-color: transparent;
+  }
+  
+  .navbar.scrolled {
+    background-color: white;
+  }
