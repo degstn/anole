@@ -12,7 +12,7 @@ export default function Footer() {
           >
              <span className="mr-900 bg-opacity-0">
             <picture>
-        <source srcSet="/steliologov1sd.svg" media="(prefers-color-scheme: dark)" />
+        {/* <source srcSet="/steliologov1sd.svg" media="(prefers-color-scheme: dark)" /> */}
         <Image
             src="/steliologov1s.svg"
             alt="Stelio Logo"
@@ -291,6 +291,18 @@ export default function Footer() {
                   className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
                 >
                   GitHub  
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="col-span-1 lg:col-span-2">
+            <ul className="flex flex-col flex-initial md:flex-1">
+              <li className="">
+                <Link
+                  href="/system-status"
+                  className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
+                >
+                  System Status  
                 </Link>
               </li>
             </ul>

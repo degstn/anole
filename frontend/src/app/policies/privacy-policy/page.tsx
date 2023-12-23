@@ -5,7 +5,7 @@ export default function Page() {
         <div className="mx-6">
     <h1 className="text-5xl font-regular mb-16 mt-52">Privacy policy</h1>
     <hr className="border-t border-black w-full" />
-        <div className="mr-72">
+        <div className="lg:mr-72 sm:mr-0">
             <p className="font-semibold  mt-2">
                 Updated
             </p>
