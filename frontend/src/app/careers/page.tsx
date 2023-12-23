@@ -27,7 +27,7 @@ export default function Page() {
                             <h3 className="font-bold">{jobDetail.job}</h3>
                             <p>{jobDetail.location}</p>
                         </div>
-                        <Link href={`https://www.greenhouse.com`}>
+                        <Link href={"https://www.greenhouse.com"}>
                             <span className="flex items-center underline">
                                 <span>Apply now</span>
                                 <span className="ml-1 mt-1.5">
