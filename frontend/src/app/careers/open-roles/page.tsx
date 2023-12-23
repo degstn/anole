@@ -70,8 +70,6 @@ export default function Page() {
                         <option value="Leadership">Leadership Leader</option>
                         <option value="Web Infrastructure">Web Infrastructure</option>
                         <option value="HQ">HQ</option>
-                        
-                        
                     </select>
                 </div>
                 <h2 className="font-semibold mb-16">Showing 11 Jobs.</h2>

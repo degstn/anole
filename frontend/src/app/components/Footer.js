@@ -27,7 +27,7 @@ export default function Footer() {
         <div className="col-span-1 lg:col-span-2">
           <ul className="flex flex-col flex-initial md:flex-1">
           <li className="sm:py-0 md:py-0 md:pb-2">
-              <p className="font-bold">
+              <p className="font-medium">
                 Product
               </p>
             </li>
@@ -68,7 +68,7 @@ export default function Footer() {
         <div className="col-span-1 lg:col-span-2">
           <ul className="flex flex-col flex-initial md:flex-1">
           <li className="sm:py-0 md:py-0 md:pb-2">
-              <p className="font-bold">
+              <p className="font-medium">
                 Research
               </p>
             </li>
@@ -110,7 +110,7 @@ export default function Footer() {
         <div className="col-span-1 lg:col-span-2">
           <ul className="flex flex-col flex-initial md:flex-1">
           <li className="sm:py-0 md:py-0 md:pb-2">
-              <p className="font-bold">
+              <p className="font-medium">
                 Documentation
               </p>
             </li>
@@ -166,7 +166,7 @@ export default function Footer() {
         <div className="col-span-1 lg:col-span-2">
           <ul className="flex flex-col flex-initial md:flex-1">
           <li className="sm:py-0 md:py-0 md:pb-2">
-              <p className="font-bold">
+              <p className="font-medium">
                 Company
               </p>
             </li>
@@ -210,106 +210,77 @@ export default function Footer() {
                 Careers
               </Link>
             </li>
+            <li className="sm:py-0 md:py-0 md:pb-2">
+              <Link
+                href="https://x.com/fltsa"
+                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
+              >
+                X
+              </Link>
+            </li>
+            <li className="sm:py-0 md:py-0 md:pb-2">
+              <Link
+                href="https://linkedin.com/in/stelioai"
+                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
+              >
+                LinkedIn
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
-      <div className="flex flex-col lg:items-center md:items-center sm:items-start justify-start py-4 pb-20 space-y-4 md:flex-row bg-zinc-900 bg-opacity-0">
-        <div>
+  <div className="text-xs container justify-start px-0 mt-5 mb-10">
+    
+    <div className="grid lg:grid-cols-5 sm:grid-cols-1 gap-4">
+    <div>
           <span>
             <p className="text-gray-500">
             Copyright &copy; {new Date().getFullYear()} Stelio
             </p>
           </span>
         </div>
-        <div className="text-xs">
-          <div className="col-span-1 lg:col-span-2">
-            <ul className="flex flex-col flex-initial md:flex-1">
-              <li className="">
-                <Link
-                  href="/policies"
-                  className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
-                >
-                  Terms & policies
-                </Link>
-              </li>
-            </ul>
-          </div>
-        <div className="col-span-1 lg:col-span-2">
-            <ul className="flex flex-col flex-initial md:flex-1">
-              <li className="">
-                <Link
-                  href="/policies/privacy-policy"
-                  className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
-                >
-                  Privacy policy
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="col-span-1 lg:col-span-2">
-            <ul className="flex flex-col flex-initial md:flex-1">
-              <li className="">
-                <Link
-                  href="/sitemap.xml"
-                  className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
-                >
-                  Site Map  
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="col-span-1 lg:col-span-2">
-            <ul className="flex flex-col flex-initial md:flex-1">
-              <li className="">
-                <Link
-                  href="https://x.com/fltsa"
-                  className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
-                >
-                  X  
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="col-span-1 lg:col-span-2">
-            <ul className="flex flex-col flex-initial md:flex-1">
-              <li className="">
-                <Link
-                  href="https://instagram.com/fltsa"
-                  className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
-                >
-                  Instagram 
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="col-span-1 lg:col-span-2">
-            <ul className="flex flex-col flex-initial md:flex-1">
-              <li className="">
-                <Link
-                  href="https://github.com/degstn/anole
-                  "
-                  className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
-                >
-                  GitHub  
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="col-span-1 lg:col-span-2">
-            <ul className="flex flex-col flex-initial md:flex-1">
-              <li className="">
-                <Link
-                  href="/system-status"
-                  className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
-                >
-                  System Status  
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <div className="col-span-1 lg:col-span-2">
+        <ul className="flex flex-row flex-initial md:flex-1">
+          <li className="mr-4">
+            <Link
+              href="/privacy-policy"
+              className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
+            >
+              Privacy policy
+            </Link>
+          </li>
+          <li className="mr-4">
+            <Link
+              href="/sitemap.xml"
+              className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
+            >
+              Site Map  
+            </Link>
+          </li>
+          <li className="mr-4">
+            
+            <Link
+              href="/system-status"
+              className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
+            >
+              System Status  
+              <span className="bg-green-500 h-2.5 w-2.5 rounded-full inline-block ml-1"></span>
+
+            </Link>
+          </li>
+          <li className="mr-4">
+            <Link
+              href="/contact"
+              className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
+            >
+              Contact  
+            </Link>
+          </li>
+        </ul>
       </div>
-    </footer>
+    </div>
+  </div>
+</footer>
   );
 }
 
