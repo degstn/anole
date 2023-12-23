@@ -70,7 +70,7 @@ const  Navbar = () => {
               <CloseMenu />
             </div>
             </div>
-            <div className="flex-col text-4xl font-semibold py-10 px-3">
+            <div className="flex-col text-4xl font-semibold text-white py-10 px-3">
             <Suspense fallback={null}>
                 {Object.entries(navItems).map(([path, { name }]) => {
                   return <NavItem key={path} path={path} name={name} />;
