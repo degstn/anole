@@ -15,7 +15,7 @@ const navItems = {
   '/research': {
     name: 'Research',
   },
-  '/company': {
+  '/about': {
     name: 'Company',
   },
   '/careers': {

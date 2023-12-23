@@ -172,7 +172,7 @@ export default function Footer() {
             </li>
             <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
-                href="/"
+                href="/about"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 About
@@ -180,7 +180,7 @@ export default function Footer() {
             </li>
             <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
-                href="/"
+                href="/initiative"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Initiative
@@ -188,15 +188,15 @@ export default function Footer() {
             </li>
             <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
-                href="/"
+                href="/blog"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
-                Blog 
+                Blog
               </Link>
             </li>
             <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
-                href="/"
+                href="/customer-stories"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Customer Stories
@@ -204,7 +204,7 @@ export default function Footer() {
             </li>
             <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
-                href="/"
+                href="/careers"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Careers

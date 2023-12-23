@@ -21,3 +21,14 @@
   .errorMessage {
     margin-bottom: 20px;
   }
+
+  @media screen and (max-width: 600px) {
+    .container {
+        padding-top: 400px;
+        flex-direction: column;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+}
