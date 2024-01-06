@@ -51,7 +51,11 @@ export default function Page() {
                 <hr className="border-t border-black w-full" />
                 <h2 className="text-3xl font-semibold mt-10 mb-5">Current Open Roles</h2>
                 <div className="flex justify-start mb-5">
-                    <select value={selectedLocation} onChange={e => setSelectedLocation(e.target.value)}>
+                    <select 
+                        className="border border-gray-300 rounded-md px-4 py-2"
+                        value={selectedLocation} 
+                        onChange={e => setSelectedLocation(e.target.value)}
+                    >
                         <option value="">All Locations</option>
                         <option value="Remote - Miami HQ">Remote - Miami HQ</option>
                         <option value="US Remote">US Remote</option>

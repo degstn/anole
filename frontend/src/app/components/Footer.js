@@ -243,7 +243,7 @@ export default function Footer() {
         <ul className="flex flex-row flex-initial md:flex-1">
           <li className="mr-4">
             <Link
-              href="/privacy-policy"
+              href="/policies/privacy-policy"
               className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
             >
               Privacy policy

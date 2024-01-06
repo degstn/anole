@@ -9,7 +9,7 @@ import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 
 const navItems = {
-  'https://anole-app.vercel.app/': {
+  '/product': {
     name: 'Product',
   },
   '/research': {
