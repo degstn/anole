@@ -33,7 +33,7 @@ export default function Footer() {
             </li>
             <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
-                href="/"
+                href="/product"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Overview
@@ -49,7 +49,7 @@ export default function Footer() {
             </li>
             <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
-                href="/"
+                href="/product#technolgies"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Technologies
@@ -57,7 +57,7 @@ export default function Footer() {
             </li>
             <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
-                href="/"
+                href="/product/enterprise"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Enterprise
@@ -74,7 +74,7 @@ export default function Footer() {
             </li>
             <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
-                href="/"
+                href="/research"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Overview
@@ -82,7 +82,7 @@ export default function Footer() {
             </li>
             <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
-                href="/"
+                href="/cost-cutting"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Cost-Cutting
@@ -90,7 +90,7 @@ export default function Footer() {
             </li>
             <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
-                href="/"
+                href="/case-studies"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Case Studies
@@ -99,7 +99,7 @@ export default function Footer() {
             {/* need an arrow icon for external site link */}
             <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
-                href="/"
+                href="/oss"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
                 Open Source

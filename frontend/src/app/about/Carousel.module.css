@@ -1,0 +1,16 @@
+/* YourPage.module.css */
+.rectangle {
+  width: 100px;
+  height: 50px;
+  background-color: gray;
+  left: -200px;
+  animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); opacity: 1; }
+  50% { transform: translateX(calc(100vw + 200px)); opacity: 1; }
+  51% { transform: translateX(calc(100vw + 200px)); opacity: 0; }
+  52% { transform: translateX(0); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
