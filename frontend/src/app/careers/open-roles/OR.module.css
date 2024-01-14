@@ -1,0 +1,39 @@
+.dropdownWrapper {
+    border: 1px solid black;
+    background: none;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20'><path d='M6 9l6 6 6-6'></path></svg>") no-repeat;
+    background-position: right 15px center;
+    background-size: 20px;
+    padding-right: 30px; /* space for the arrow */
+}
+
+.dropdownWrapper:focus-within {
+    outline: auto; /* Example: blue outline */
+    /* Add other styles as needed */
+}
+
+.dropdown {
+    border: none;
+    background: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: none;
+    font-size: 16px;
+    color: black;
+    width: calc(100% + 20px);
+    height: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.dropdown:focus {
+    outline: none; /* Removes the default focus outline */
+}
+

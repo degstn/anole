@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useState, useEffect } from 'react';
+import styles from './OR.module.css';
 
 const originalJobs = [
     { job: "Software Engineer", location: "Remote - Miami HQ", team:  "Engineering"},
@@ -51,8 +52,10 @@ export default function Page() {
                 <hr className="border-t border-black w-full" />
                 <h2 className="text-3xl font-semibold mt-10 mb-5">Current Open Roles</h2>
                 <div className="flex justify-start mb-5">
+                    <div className="mr-5">
+                    <div className={styles.dropdownWrapper}>
                     <select 
-                        className="border border-gray-300 rounded-md px-4 py-2"
+                        className={styles.dropdown}
                         value={selectedLocation} 
                         onChange={e => setSelectedLocation(e.target.value)}
                     >
@@ -61,9 +64,11 @@ export default function Page() {
                         <option value="US Remote">US Remote</option>
                         <option value="Miami HQ">Miami HQ</option>
                     </select>
-
+                    </div>
+                    </div>
+                    <div className={styles.dropdownWrapper}>
                     <select
-                        className="border border-gray-300 rounded-md px-4 py-2"
+                        className={styles.dropdown}
                         value={jobType}
                         onChange={(e) => setJobType(e.target.value)}
                     >
@@ -75,8 +80,9 @@ export default function Page() {
                         <option value="Web Infrastructure">Web Infrastructure</option>
                         <option value="HQ">HQ</option>
                     </select>
+                    </div>
                 </div>
-                <h2 className="font-semibold mb-16">Showing 11 Jobs.</h2>
+                <h2 className="font-semibold mb-16">Showing {jobs.length} Jobs.</h2>
             <div className="grid gap-0">
                 {jobs.map((job, index) => (
                     <div key={index} className="border-t border-black py-2 flex justify-between items-center">
