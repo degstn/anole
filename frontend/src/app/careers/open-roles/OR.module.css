@@ -8,7 +8,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20'><path d='M6 9l6 6 6-6'></path></svg>") no-repeat;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20'><path d='M6 9l6 6 6-6' fill='none' stroke='black' stroke-width='2'></path></svg>") no-repeat;
     background-position: right 15px center;
     background-size: 20px;
     padding-right: 30px; /* space for the arrow */

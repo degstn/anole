@@ -85,10 +85,10 @@ export default function Page() {
                 <h2 className="font-semibold mb-16">Showing {jobs.length} Jobs.</h2>
             <div className="grid gap-0">
                 {jobs.map((job, index) => (
-                    <div key={index} className="border-t border-black py-2 flex justify-between items-center">
+                    <div key={index} className="border-t border-black py-2 flex justify-between items-center hover:underline">
                         <div>
                             <h3 className="font-bold">{job.job}</h3>
-                            <p>{job.location} - {job.team}</p>
+                            <p className="no-underline">{job.location} - {job.team}</p>
                         </div>
                         <Link href={`https://www.greenhouse.com`}>
                             <span className="flex items-center underline">
