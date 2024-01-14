@@ -1,12 +1,31 @@
+"use client"
 import Link from 'next/link'
+import { useRef } from 'react';
 
 export default function Page() {
+    const lrRef = useRef<HTMLDivElement>(null);
+
+    const learnMore = () => {
+        lrRef.current?.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
       <main className="flex min-h-screen flex-col items-stretch justify-between">
         <div className="mx-6">
-            <h1 className="text-5xl font-regular mb-16 mt-52">Careers</h1>
-            <hr className="border-t border-black w-full" />
-
+        <h1 className="text-6xl font-bold mb-11 mt-48 text-center">Join us in making <br /> energy provision, cleaner.</h1>
+        <div className="flex justify-center">
+        <a href="/careers/open-roles"
+            className="inline-block text-white bg-black px-4 py-2 mx-2 rounded-lg"
+        >
+            View open roles
+        </a>
+        <a href="#"
+           onClick={learnMore}
+           className="inline-block border border-black text-black px-4 py-2 mx-2 rounded-lg"
+        >
+            Learn more
+        </a>
+        </div>
 
             <h2 className="text-3xl font-semibold mt-10 mb-2">Featured Roles</h2>
             <p className="mb-4">We are constantly seeking new talent to make Stelio even better for our users.</p>
@@ -40,7 +59,7 @@ export default function Page() {
             </div>
                            
         </div>
-            <section className="w-screen bg-white py-10 mt-10">
+            <section ref={lrRef} id="overview" className="w-screen bg-white py-10 mt-10">
                 <h2 className="text-3xl font-semibold text-center">Our Community</h2>
                 <p className="text-center mt-4 mb-52">Sections will be added for staging.</p>
             </section>  

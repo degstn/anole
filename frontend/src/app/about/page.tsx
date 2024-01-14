@@ -14,20 +14,8 @@ export default function Page() {
                 Building a cleaner world through the all-purpose site <br/> of energy initiatives, one step at a time.
             </p>
         <h2 className="text-3xl text-black font-semibold mt-10 mb-5 text-center">Working with the best energy partners in the world</h2>
-        
-        
         </div>
-        <div className="flex flex-col">
-        {[...Array(25)].map((_, i) => (
-        <div 
-          key={i} 
-          className={styles.rectangle} 
-          style={{
-            animationDelay: `${i * 1.9}s`, // Delay each rectangle's start time
-          }}
-        />
-      ))}
-      </div>
+        
 
         
     </main>
