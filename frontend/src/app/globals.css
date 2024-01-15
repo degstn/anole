@@ -26,3 +26,11 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+select {
+  appearance: none;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20'><path d='M7 10l5 5 5-5z' fill='black'/></svg>") no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+  padding-right: 30px; /* space for the arrow */
+}
