@@ -12,7 +12,7 @@ export default function Page() {
     return (
       <main className="flex min-h-screen flex-col items-stretch justify-between">
         <div className="mx-6">
-        <h1 className="text-6xl font-bold mb-11 mt-48 text-center">Join us in making <br /> energy provision, cleaner.</h1>
+        <h1 className="text-6xl font-bold mb-11 mt-48 text-center">Join us in making <br /> energy provision cleaner.</h1>
         <div className="flex justify-center">
         <a href="/careers/open-roles"
             className="inline-block text-white bg-black px-4 py-2 mx-2 rounded-lg"
