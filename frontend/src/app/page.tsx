@@ -1,23 +1,23 @@
 "use client"
 
 import Image from 'next/image'
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import styles from './Home.module.css';
 
 export default function Home() {
   const [countdownText, setCountdownText] = useState('the future');
-  const countdownTexts = ['the future', 'amazing things', 'innovation', 'you', 'the home'];
+  const countdownTextsRef = useRef(['the future', 'amazing things', 'innovation', 'you', 'the home']);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (countdownTexts.length === 0) {
+      if (countdownTextsRef.current.length === 0) {
         clearInterval(interval);
         return;
       }
-      const randomIndex = Math.floor(Math.random() * countdownTexts.length);
-      const newText = countdownTexts[randomIndex];
+      const randomIndex = Math.floor(Math.random() * countdownTextsRef.current.length);
+      const newText = countdownTextsRef.current[randomIndex];
       setCountdownText(newText);
-      countdownTexts.splice(randomIndex, 1);
+      countdownTextsRef.current.splice(randomIndex, 1);
     }, 3000);
 
 
