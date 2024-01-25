@@ -20,22 +20,20 @@ export default function Page() {
             </p>
         <h2 className="text-3xl text-black font-semibold mt-10 mb-16 text-center">Working with the best energy partners in the world</h2>
         <div className="mb-16">
-      <Ticker duration={20}>
-        {logos.map((item, index) => (
-         <div className="mr-10 fill-black justify-center my-auto text-center">
-         <picture>
-          <Image
-              src={item}
-              alt=""
-              width={75}
-              height={75}
-          />
-        </picture>
-        </div>
-          ))}
-          
-          
-      </Ticker>
+        <Ticker duration={20}>
+  {logos.map((item, index) => (
+    <div key={index} className="mr-10 fill-black justify-center my-auto text-center">
+      <picture>
+        <Image
+          src={item}
+          alt=""
+          width={75}
+          height={75}
+        />
+      </picture>
+    </div>
+  ))}
+</Ticker>
     </div>
         
 
