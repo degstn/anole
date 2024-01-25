@@ -72,15 +72,15 @@ export default function Home() {
         </a>
       </div>
       </div>
-      <section className="w-screen bg-gray-600 opacity-40 py-10 mt-10">
+      {/* <section className="w-screen bg-gray-600 opacity-40 py-10 mt-10">
         <h2 className="text-3xl text-white font-semibold text-center">Solutions</h2>
         <p className="text-center text-white mt-4 mb-52">Sections will be added for staging.</p>
-      </section>  
-      <footer className="text-gray-500 py-4 px-6 text-sm">
+      </section>   */}
+      {/* <footer className="text-gray-500 py-4 px-6 text-sm">
         <p className="text-xs mb-5">1. Statistics may not be accurate.</p>
         <p className="text-xs mb-5">2. Stelio is only available for customers in the United States. More countries coming soon.</p>
         <p className="text-xs mb-0">3. Sign in is required to get started.</p>
-      </footer> 
+      </footer>  */}
     </main>
   )
 }

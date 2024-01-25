@@ -26,10 +26,10 @@ export default function Page() {
                     </div>
 
                     <a
-                        href="https://anole-app.vercel.app"
+                        href="/product/design"
                         className="inline-block border border-white text-white px-4 py-2 mt-4 rounded-lg"
                     >
-                        Request access
+                        Get started
                     </a>
 
                     <a

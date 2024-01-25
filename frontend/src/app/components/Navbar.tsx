@@ -123,7 +123,7 @@ function NavItem({ path, name }: { path: string; name: string }) {
       key={path}
       href={path}
       className=
-        'transition-all hover:underline underline-offset-4 hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle'
+        'transition-all hover:underline underline-offset-4 hover:text-neutral-800 flex align-middle'
       
     >
       <span className="relative py-3 px-2">

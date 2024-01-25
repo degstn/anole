@@ -180,22 +180,6 @@ export default function Footer() {
             </li>
             <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
-                href="/initiative"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
-              >
-                Initiative
-              </Link>
-            </li>
-            <li className="sm:py-0 md:py-0 md:pb-2">
-              <Link
-                href="/blog"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
-              >
-                Blog
-              </Link>
-            </li>
-            <li className="sm:py-0 md:py-0 md:pb-2">
-              <Link
                 href="/customer-stories"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
