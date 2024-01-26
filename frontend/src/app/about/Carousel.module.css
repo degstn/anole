@@ -1,16 +1,23 @@
-/* YourPage.module.css */
-.rectangle {
-  width: 100px;
-  height: 50px;
-  background-color: gray;
-  left: 200px;
-  animation: slide 10s linear infinite;
+.ticker-container {
+  position: relative;
 }
 
-@keyframes slide {
-  0% { transform: translateX(0); opacity: 1; }
-  50% { transform: translateX(calc(100vw + 200px)); opacity: 1; }
-  51% { transform: translateX(calc(100vw + 200px)); opacity: 0; }
-  52% { transform: translateX(0); opacity: 0; }
-  100% { transform: translateX(0); opacity: 1; }
+.ticker-container::before,
+.ticker-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  z-index: 2;
+}
+
+.ticker-container::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0));
+}
+
+.ticker-container::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(0,0,0,0.5), rgba(0,0,0,0));
 }

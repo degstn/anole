@@ -12,8 +12,8 @@ const navItems = {
   '/product': {
     name: 'Product',
   },
-  '/research': {
-    name: 'Research',
+  '/oss': {
+    name: 'Open Source',
   },
   '/about': {
     name: 'Company',

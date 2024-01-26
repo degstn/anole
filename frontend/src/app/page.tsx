@@ -27,19 +27,19 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col justify-between p-25">
       <div 
-        className="flex flex-col items-center min-h-[calc(100vh-44px)] justify-center"
+        className="flex flex-col items-start min-h-[calc(100vh-44px)] justify-start"
         style={{
           backgroundImage: `url(/steliogradientv1.svg)`,
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover'
         }}
       >
-        <h1 className="text-5xl tracking-tight max-w-3xl font-medium mb-20 mt-52">
+        <h1 className="text-8xl tracking-tight max-w-4xl font-medium mb-14 mt-52 mx-6">
         <span>Energy for </span><span className={styles['countdown-text']}>{countdownText}</span>
         </h1>
         <a
           href="https://anole-app.vercel.app"
-          className="inline-block bg-black border border-black text-white px-10 py-2 mt-0 mb-20 rounded-lg"
+          className="inline-block bg-black border border-black text-white px-12 py-3 mt-0 mb-20 rounded-lg mx-6"
         >
           Request access
         </a>

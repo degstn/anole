@@ -5,7 +5,6 @@ import React from 'react';
 import Image from 'next/image'
 
 
-
 export default function Page() {
       const logos = ['fpl.svg', 'tesla.svg', 'sunpower.svg', 'nxte.svg', 'vestas.svg'];
       
@@ -19,10 +18,12 @@ export default function Page() {
                 Building a cleaner world through the all-purpose site <br/> of energy initiatives, one step at a time.
             </p>
         <h2 className="text-3xl text-black font-semibold mt-10 mb-16 text-center">Working with the best energy partners in the world</h2>
-        <div className="mb-16">
-        <Ticker duration={20}>
+        </div>
+        <div className="mb-16 ticker-container">
+
+        <Ticker duration={10}>
   {logos.map((item, index) => (
-    <div key={index} className="mr-10 fill-black justify-center my-auto text-center">
+    <div key={index} className="mr-10 justify-center my-auto text-center">
       <picture>
         <Image
           src={item}
@@ -35,16 +36,15 @@ export default function Page() {
   ))}
 </Ticker>
     </div>
+    <div className="mx-6">
         
-
-        <div className="flex flex-row justify-start mx-6">
-        <h2 className="text-2xl text-black font-semibold mt-10 mb-5 text-start mr-48">Our Purpose</h2>
-        <h2 className="text-3xl text-black font-semibold mt-10 mb-5 text-start">As energy is a touchy subject, Stelio is comitted to making energy provision as easy and accomplishable all with the click of a button.</h2>
+        <div className="flex flex-col justify-start">
+        <h2 className="text-3xl text-black font-semibold mt-10 mb-5 text-start">Our Purpose</h2>
+        <h2 className="text-2xl lg:mr-80 sm:mr-0">As energy is a touchy subject, Stelio is comitted to making energy provision as easy and accomplishable all with the click of a button.</h2>
 
         </div>
-        <div className="flex flex-row justify-start mx-6">
-        <h2 className="text-2xl text-black font-semibold mt-10 mb-5 text-start mr-48">Values</h2>
-        <h2 className="text-3xl text-black font-semibold mt-10 mb-5 text-start">As energy is a touchy subject, Stelio is comitted to making energy provision as easy and accomplishable all with the click of a button.</h2>
+        <div className="flex flex-col justify-start">
+        <h2 className="text-3xl text-black font-semibold mt-10 mb-5 text-start">Values</h2>
         </div>
         </div>
         
