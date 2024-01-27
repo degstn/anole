@@ -26,6 +26,7 @@ export default function Page() {
             Learn more
         </a>
         </div>
+        <hr className="border-black mt-10"/>
 
             <h2 className="text-3xl font-semibold mt-10 mb-2">Featured Roles</h2>
             <p className="mb-4">We are constantly seeking new talent to make Stelio even better for our users.</p>
@@ -59,16 +60,29 @@ export default function Page() {
             </div>
                            
         </div>
-            <section ref={lrRef} id="overview" className="w-screen bg-white py-10 mt-10">
+            <section ref={lrRef} id="overview" className="w-screen py-10 mt-10">
                 <h2 className="text-3xl font-semibold text-center">Our Community</h2>
                 <p className="text-center mt-4 mb-52">Sections will be added for staging.</p>
             </section>  
-            <footer className="py-4 px-6 text-sm">
-                <p className="text-xs mb-10">At Stelio, we champion innovative energy solutions with a commitment to a brighter future.</p>
-                <p className="text-xs mb-10">Stelio is not just a workplace; it's a canvas for diversity and dynamism. We're an Equal Opportunity Innovator, fervently believing in creating a mosaic of talents, perspectives, and ideas. Our pledge is to ensure fair consideration for every aspiring Stelio team member, irrespective of their race, hue, beliefs, gender, love's expression, age, global roots, abilities, veteran status, or identity tapestry. We stand firm in the belief that our strength blooms from this diversity.</p>
-                <p className="text-xs mb-10">Mindful of the unique paths we each tread, Stelio is dedicated to harmonizing our work environment with the needs of those with differing abilities. If the dance of the interview requires a different rhythm, let your Stelio guide know - we're here to choreograph a process that resonates with your beat.</p>
-                <p className="text-xs mb-0">For those who navigate the digital realm with the aid of screen reading technologies, we offer a portal to a compatible, complimentary digital lens, complete with a guide to unveil its wonders step by step. Join us in a journey where energy not only powers our homes but also empowers our lives.</p>
-            </footer> 
+            <hr className="border-black mx-6"/>
+            <div className="lg:py-10">
+                <div className="mx-6 flex flex-col items-center justify-center">
+                    <div className="text-5xl font-semibold mt-2 mb-4">
+                        Join us in making energy easier.
+                    </div>
+                    {/* <div className="text-2xl font-semibold mt-2">
+                        Coming soon.
+                    </div> */}
+                    <div className="w-40"> {/* Set the width of the container */}
+                        <a
+                            href="/careers/open-roles"
+                            className="inline-block border border-black text-black px-4 py-2 mt-4 rounded-lg"
+                        >
+                            Apply now
+                        </a>
+                    </div>
+                </div>
+            </div>
       </main>
     )
 }
