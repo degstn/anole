@@ -30,6 +30,37 @@ export default function Page() {
                 />
               </picture>
             </div>
+            <h2 className="text-3xl text-black font-semibold mt-10 text-start">Featured Research</h2>
+            <div className="mt-2 mb-20">
+                <Link href={`/careers/open-roles`}>
+                    <span className="underline">View all research</span>
+                </Link>
+            </div>
+            <div className="grid grid-cols-2 gap-10 justify-center text-center pb-10">
+            <p className="border-2 border-black py-60">featuredcontent_01</p>
+            <p className="border-2 border-black py-60">featuredcontent_02</p>
+            <p className="border-2 border-black py-60">featuredcontent_03</p>
+            <p className="border-2 border-black py-60">featuredcontent_04</p>
+            </div>
+            <hr className="border-black"/>
+            <div className="lg:py-10">
+                <div className="mx-6 flex flex-col items-center justify-center">
+                    <div className="text-5xl font-semibold mt-2 mb-4">
+                        Join us in making energy easier.
+                    </div>
+                    {/* <div className="text-2xl font-semibold mt-2">
+                        Coming soon.
+                    </div> */}
+                    <div className="w-40"> {/* Set the width of the container */}
+                        <a
+                            href="/careers/open-roles"
+                            className="inline-block border border-black text-black px-4 py-2 mt-4 rounded-lg"
+                        >
+                            Apply now
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     )
