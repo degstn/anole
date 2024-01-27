@@ -14,27 +14,23 @@ export default function Page() {
     return (
       <main className="flex min-h-screen flex-col justify-center">
         <div className="mx-6">
-    <h1 className="text-6xl font-bold mb-11 mt-48 text-center">Open for you. <br /> Open for all.</h1>
-            <p className="text-2xl text-gray-500 font-regular mt-0 text-center">
-                Making the world a better place <br/> throhgb oss idfk i need help lmao
-            </p>
+    <h1 className="text-6xl font-bold mb-0 mt-48 text-center">Open for you. <br /> Open for all.</h1>
+            
             <div className="flex flex-col justify-start">
-            <h2 className="text-3xl text-black font-semibold mt-10 mb-5 text-center">Our Purpose</h2>
-            <h2 className="text-2xl mx-72 text-center">As energy is a touchy subject, Stelio is comitted to making energy provision as easy and accomplishable all with the click of a button.</h2>
+            <h2 className="text-3xl text-black font-semibold mt-10 mb-5 text-center">OSS</h2>
+            <h2 className="text-2xl mx-72 text-center">Stelio was built around the idea that clean, renewable energy should be as accessible to users as for developers. Therefore, the source of Stelio is fully open source for contribution and reference.</h2>
             </div>
             <div className="flex justify-center">
               <picture>
                 <Image
                     src="/oss1.png"
                     alt="Stelio Logo"
-                    width={750}
-                    height={750}
+                    width={800}
+                    height={800}
                 />
               </picture>
             </div>
         </div>
-        
-        
     </main>
     )
 }
