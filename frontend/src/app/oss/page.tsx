@@ -4,13 +4,8 @@ import React from 'react';
 import Image from 'next/image'
 import Link from 'next/link';
 
-
-
 export default function Page() {
-      const logos = ['fpl.svg', 'tesla.svg', 'sunpower.svg', 'nxte.svg', 'vestas.svg'];
-      
-
-
+          
     return (
       <main className="flex min-h-screen flex-col justify-center">
         <div className="mx-6">
@@ -37,10 +32,10 @@ export default function Page() {
                 </Link>
             </div>
             <div className="grid grid-cols-2 gap-10 justify-center text-center pb-10">
-            <p className="border-2 border-black py-60">featuredcontent_01</p>
-            <p className="border-2 border-black py-60">featuredcontent_02</p>
-            <p className="border-2 border-black py-60">featuredcontent_03</p>
-            <p className="border-2 border-black py-60">featuredcontent_04</p>
+            <p className="border-2 border-black py-60">featuredContent_01</p>
+            <p className="border-2 border-black py-60">featuredContent_02</p>
+            <p className="border-2 border-black py-60">featuredContent_03</p>
+            <p className="border-2 border-black py-60">featuredContent_04</p>
             </div>
             <hr className="border-black"/>
             <div className="lg:py-10">
