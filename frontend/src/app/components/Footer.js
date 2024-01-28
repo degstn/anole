@@ -4,27 +4,27 @@ import Image from 'next/image';
 export default function Footer() {
   return (
     <footer className="mx-auto max-w-[1920px] px-6 bg-zinc-900 bg-opacity-0">
-      <div className="grid grid-cols-1 gap-8 py-12 pb-20 transition-colors duration-150 border-b lg:grid-cols-12 border-zinc-600 bg-zinc-900 bg-opacity-0">
-        <div className="col-span-1 lg:col-span-2">
+      <div className="grid grid-cols-1 gap-8 lg:gap-0 py-12 pb-20 transition-colors duration-150 border-b lg:grid-cols-[repeat(16,_minmax(0,_1fr))] border-zinc-600 bg-zinc-900 bg-opacity-0 ">
+        <div className="col-span-2 lg:col-span-6">
           <Link
             href="/"
             className="flex items-center flex-initial font-bold md:mr-25"
           >
              <span className="mr-900 bg-opacity-0">
-            <picture>
-        {/* <source srcSet="/steliologov1sd.svg" media="(prefers-color-scheme: dark)" /> */}
-        <Image
-            src="/steliologov1s.svg"
-            alt="Stelio Logo"
-            width={100}
-            height={100}
-        />
-      </picture>
+              <picture>
+              {/* <source srcSet="/steliologov1sd.svg" media="(prefers-color-scheme: dark)" /> */}
+              <Image
+                  src="/steliologov1s.svg"
+                  alt="Stelio Logo"
+                  width={100}
+                  height={100}
+              />
+              </picture>
             </span>
             
           </Link>
         </div>
-        <div className="col-span-1 lg:col-span-2">
+        <div className="col-span-1 lg:col-span-3">
           <ul className="flex flex-col flex-initial md:flex-1">
           <li className="sm:py-0 md:py-0 md:pb-2">
               <p className="font-medium">
@@ -36,15 +36,15 @@ export default function Footer() {
                 href="/product"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
-                Overview
+                Get Started
               </Link>
             </li>
             <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
-                href="https://anole-app.vercel.app/"
+                href="/oss"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
-                Get Started
+                Open Source
               </Link>
             </li>
             <li className="sm:py-0 md:py-0 md:pb-2">
@@ -65,49 +65,8 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="col-span-1 lg:col-span-2">
-          <ul className="flex flex-col flex-initial md:flex-1">
-          <li className="sm:py-0 md:py-0 md:pb-2">
-              <p className="font-medium">
-                Research
-              </p>
-            </li>
-            <li className="sm:py-0 md:py-0 md:pb-2">
-              <Link
-                href="/research"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
-              >
-                Overview
-              </Link>
-            </li>
-            <li className="sm:py-0 md:py-0 md:pb-2">
-              <Link
-                href="/cost-cutting"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
-              >
-                Cost-Cutting
-              </Link>
-            </li>
-            <li className="sm:py-0 md:py-0 md:pb-2">
-              <Link
-                href="/case-studies"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
-              >
-                Case Studies
-              </Link>
-            </li>
-            {/* need an arrow icon for external site link */}
-            <li className="sm:py-0 md:py-0 md:pb-2">
-              <Link
-                href="/oss"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
-              >
-                Open Source
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="col-span-1 lg:col-span-2">
+        
+        <div className="col-span-1 lg:col-span-3">
           <ul className="flex flex-col flex-initial md:flex-1">
           <li className="sm:py-0 md:py-0 md:pb-2">
               <p className="font-medium">
@@ -163,7 +122,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="col-span-1 lg:col-span-2">
+        <div className="col-span-1 lg:col-span-3">
           <ul className="flex flex-col flex-initial md:flex-1">
           <li className="sm:py-0 md:py-0 md:pb-2">
               <p className="font-medium">
@@ -212,6 +171,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
+        
       </div>
   <div className="text-xs container justify-start px-0 mt-5 mb-10">
     
@@ -238,7 +198,7 @@ export default function Footer() {
               href="/sitemap.xml"
               className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
             >
-              Site Map  
+              Sitemap  
             </Link>
           </li>
           <li className="mr-4">

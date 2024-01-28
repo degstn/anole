@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link';
 
 export default function Page() {
-          
+
     return (
       <main className="flex min-h-screen flex-col justify-center">
         <div className="mx-6">
@@ -13,7 +13,7 @@ export default function Page() {
             
             <div className="flex flex-col justify-start">
             <h2 className="text-3xl text-black font-semibold mt-10 mb-5 text-center">OSS</h2>
-            <h2 className="text-2xl mx-72 text-center">Stelio was built around the idea that clean, renewable energy should be as accessible to users as for developers. Therefore, the source of Stelio is fully open source for contribution and reference.</h2>
+            <h2 className="text-2xl lg:mx-72 text-center">Stelio was built around the idea that clean, renewable energy should be as accessible to users as for developers. Therefore, the source of Stelio is fully open source for contribution and reference.</h2>
             </div>
             <div className="flex justify-center">
               <picture>
