@@ -34,7 +34,7 @@ export default function Home() {
           backgroundSize: 'cover'
         }}
       >
-        <h1 className="text-8xl tracking-tight max-w-4xl font-medium mb-14 mt-52 mx-6">
+        <h1 className="text-5xl lg:text-8xl tracking-tight max-w-5xl font-medium mb-14 mt-52 mx-6">
         <span>Energy for </span><span className={styles['countdown-text']}>{countdownText}</span>
         </h1>
         <a
