@@ -39,7 +39,7 @@ export default function Home() {
         </h1>
         <a
           href="mailto:d@degstn.com"
-          className="inline-block bg-black border border-black text-white px-12 py-3 mt-0 mb-20 rounded-lg mx-6"
+          className="inline-block bg-green-700 border border-green-800 hover:bg-green-800 text-white px-6 py-1 mt-0 mb-20 rounded-lg mx-6"
         >
           Get started
         </a>
@@ -112,6 +112,29 @@ export default function Home() {
         <p>go too</p>
         </div>
         </div>
+
+        <div className="lg:py-10">
+                <div className="mx-6 mt-20 mb-40 flex flex-col text-center items-center justify-center">
+                    <div className="text-4xl lg:text-8xl font-semibold mt-2 mb-4">
+                        Join the future <br/> of energy
+                    </div>
+                    
+                    <div className="flex flex-col"> {/* Set the width of the container */}
+                        <a
+                            href="/careers/open-roles"
+                            className="inline-block border text-white border-green-800 bg-green-700 px-4 py-1 mt-4 rounded-lg"
+                        >
+                            Get started
+                        </a>
+                        <a
+                            href="/careers/open-roles"
+                            className="hover:underline inline-block text-black px-4 py-1 mt-4"
+                        >
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+            </div>
         
         {/* <a
           href="/"
