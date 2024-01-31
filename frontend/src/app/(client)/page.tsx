@@ -115,7 +115,7 @@ export default function Home() {
 
         <div className="lg:py-10">
                 <div className="mx-6 mt-20 mb-40 flex flex-col text-center items-center justify-center">
-                    <div className="text-4xl lg:text-8xl font-semibold mt-2 mb-4">
+                    <div className="text-6xl lg:text-8xl font-semibold mt-2 mb-4">
                         Join the future <br/> of energy
                     </div>
                     
