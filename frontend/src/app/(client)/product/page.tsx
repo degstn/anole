@@ -14,7 +14,7 @@ export default function Page() {
         <main className="flex min-h-screen flex-col items-stretch justify-between">
             <div className="bg-green-900 lg:py-28">
                 <div className='flex justify-end'>
-                    
+
             <picture>
                             <Image
                                 src="/g1f.png"
@@ -37,10 +37,10 @@ export default function Page() {
                     </div>
 
                     <a
-                        href="mailto:d@degstn.com"
+                        href="/getstarted"
                         className="inline-block border border-white text-white px-4 py-2 mt-4 rounded-lg"
                     >
-                        Request access
+                        Get started
                     </a>
 
                     <a

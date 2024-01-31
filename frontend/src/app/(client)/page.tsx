@@ -41,7 +41,7 @@ export default function Home() {
           href="mailto:d@degstn.com"
           className="inline-block bg-black border border-black text-white px-12 py-3 mt-0 mb-20 rounded-lg mx-6"
         >
-          Request access
+          Get started
         </a>
         <picture>
           <Image
@@ -53,7 +53,7 @@ export default function Home() {
         </picture>
       </div>
       <div 
-        className="flex flex-col items-start min-h-[calc(100vh-44px)] justify-start"
+        className="flex flex-col min-h-[calc(100vh-44px)] "
         style={{
           backgroundImage: `url(/steliog6.svg)`,
           backgroundRepeat: 'no-repeat',
@@ -61,9 +61,13 @@ export default function Home() {
         }}
       >
         <div className="">
-        <h1 className="text-5xl tracking-tight max-w-3xl font-medium mb-20 mt-20 mx-6">
+        <h1 className="text-5xl tracking-tight max-w-3xl text-green-800 font-medium mb-2 mt-20 mx-6">
         <span>Facilitate Personal Energy </span>
         </h1>
+        <p className="text-3xl tracking-tight max-w-3xl font-medium mb-20 mx-6">
+        <span>Find popular energy incentives near you simply with your address. </span>
+        </p>
+        <div className='flex'>
         <picture>
           <Image
             src="/g0f.png"
@@ -72,13 +76,49 @@ export default function Home() {
             height={500}
           />
         </picture>
+        <div className='text-xl font-bold col-span-1'>
+        <p>text</p>
+        <p>will</p>
+        <p>go</p>
+        <p>here</p>
+        </div>
+
+        </div>
+        <div className="flex justify-end mt-10">
+          
+        <picture>
+          <Image
+            src="/g1f.png"
+            alt="gs1"
+            width={800}
+            height={500}
+          />
+          </picture>
+          
+        </div>
+        <div className="flex mt-10">
+        <picture>
+          <Image
+            src="/g0f.png"
+            alt="gs0"
+            width={800}
+            height={500}
+          />
+        </picture>
+        <div className='text-xl font-bold col-span-1'>
+        <p>where it</p>
+        <p>will</p>
+        <p>eventually</p>
+        <p>go too</p>
+        </div>
+        </div>
         
-        <a
+        {/* <a
           href="/"
           className="inline-block bg-black border border-black text-white px-10 py-2 mt-10 mb-20 rounded-lg mx-6"
         >
           Button
-        </a>
+        </a> */}
       </div>
       </div>
       {/* <section className="w-screen bg-gray-600 opacity-40 py-10 mt-10">
