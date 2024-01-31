@@ -13,8 +13,19 @@ export default function Page() {
     return (
         <main className="flex min-h-screen flex-col items-stretch justify-between">
             <div className="bg-green-900 lg:py-28">
+                <div className='flex justify-end'>
+                    
+            <picture>
+                            <Image
+                                src="/g1f.png"
+                                alt="Stelio Logo"
+                                width={600}
+                                height={600}
+                            />
+                        </picture>
+                        </div>
                 <div className="mx-6">
-                    <div className="text-5xl font-regular mb-6 mt-96">
+                    <div className="text-5xl font-regular mb-6 min-h-fit">
                         <picture>
                             <Image
                                 src="/spd.svg"
@@ -70,10 +81,10 @@ export default function Page() {
                     </div> */}
                     <div className="w-40"> {/* Set the width of the container */}
                         <a
-                            href="mailto:d@degstn.com"
+                            href="/getstarted"
                             className="inline-block border border-black text-black px-4 py-2 mt-4 rounded-lg"
                         >
-                            Request access
+                            Get started
                         </a>
                     </div>
                 </div>

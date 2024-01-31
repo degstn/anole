@@ -25,7 +25,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col justify-between p-25">
+    <main className="flex min-h-screen flex-col justify-between">
       <div 
         className="flex flex-col items-start min-h-[calc(100vh-44px)] justify-start"
         style={{
@@ -41,7 +41,7 @@ export default function Home() {
           href="mailto:d@degstn.com"
           className="inline-block bg-black border border-black text-white px-12 py-3 mt-0 mb-20 rounded-lg mx-6"
         >
-          Get started
+          Request access
         </a>
         <picture>
           <Image
@@ -60,13 +60,22 @@ export default function Home() {
           backgroundSize: 'cover'
         }}
       >
-        <div className="mx-6">
-        <h1 className="text-5xl tracking-tight max-w-3xl font-medium mb-0 mt-5">
-        <span>Solutions </span>
+        <div className="">
+        <h1 className="text-5xl tracking-tight max-w-3xl font-medium mb-20 mt-20 mx-6">
+        <span>Facilitate Personal Energy </span>
         </h1>
+        <picture>
+          <Image
+            src="/g0f.png"
+            alt="gs0"
+            width={800}
+            height={500}
+          />
+        </picture>
+        
         <a
           href="/"
-          className="inline-block bg-black border border-black text-white px-10 py-2 mt-10 mb-20 rounded-lg"
+          className="inline-block bg-black border border-black text-white px-10 py-2 mt-10 mb-20 rounded-lg mx-6"
         >
           Button
         </a>

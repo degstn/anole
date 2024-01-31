@@ -14,14 +14,14 @@ export default function Page() {
 
     return (
         <div className="pt-20 overflow-hidden overscroll-none">
-        <div key="1" className="grid grid-cols-2">
-          <div className="relative mt-48">
-            <picture>
+        <div key="1" className="grid grid-cols-2 ">
+          <div className="relative">
+            <picture className="rounded-lg">
             <Image
               alt=""
-              className="absolute inset-0 object-cover w-full h-full"
-              height="1080"
-              src="/oss1.svg"
+              className="absolute inset-0 object-cover  w-full h-fit p-6"
+              height="1000"
+              src="/IMG_0938.JPG"
               style={{
                 aspectRatio: "960/1080",
                 objectFit: "cover",
@@ -30,45 +30,50 @@ export default function Page() {
             />
             </picture>
           </div>
-          <ScrollArea className="max-h-screen w-full p-6">
+          <ScrollArea className="max-h-screen min-w-full">
             <div className="space-y-6">
               <div className="w-full">
-                <p className="text-sm text-gray-500 dark:text-gray-400">Progress</p>
+                <Button asChild>
+                <Link className="text-md bg-transparent shadow-none hover:bg-gray-200" href="/">
+                    <Chevron className="mr-2 h-4 w-4"/> Back
+                </Link>
+                </Button>
                 <div />
               </div>
+              <div className="p-6">
+
               <div className="grid w-full gap-1.5">
-                <h2 className="question-1">Question 1</h2>
-                <div className="space-y-2" id="question-1">
-                  <Button className="w-full border-2 border-transparent focus:border-green-500">Option 1</Button>
-                  <Button className="w-full border-2 border-transparent focus:border-green-500">Option 2</Button>
-                  <Button className="w-full border-2 border-transparent focus:border-green-500">Option 3</Button>
+                
+                <h2 className="text-3xl font-medium">Choose a base configuration</h2>
+                <h3 className="pb-10 text-gray-800">You can add others later, start by choosing one.</h3>
+                <div className="space-y-2 " id="question-1">
+                  <p className="text-md text-slate-800">Home address</p>
+                  <Button className="min-w-full h-10 bg-neutral-100 shadow-none focus:border-green-500">
+                    address
+                    </Button>
+                <p className="text-md text-slate-800">Other input</p>  
+                  <Button className="min-w-full h-10 bg-neutral-100 shadow-none focus:border-green-500">
+                    io
+                    </Button>
+                </div>
+
+                <div className="space-y-2 pt-20" id="">
+                  <Button className="min-w-full h-20 border border-gray-500 focus:border-green-500">
+                    Solar
+                    </Button>
+                  <Button className="min-w-full h-20 border border-gray-500 focus:border-green-500">
+                    Heat
+                    </Button>
+                  <Button className="min-w-full h-20 border border-gray-500 focus:border-green-500">
+                    Wind
+                    </Button>
                 </div>
               </div>
-              <div className="grid w-full gap-1.5">
-                <h2 className="question-2">Question 2</h2>
-                <div className="space-y-2" id="question-2">
-                  <Button className="w-full border-2 border-transparent focus:border-green-500">Option 1</Button>
-                  <Button className="w-full border-2 border-transparent focus:border-green-500">Option 2</Button>
-                  <Button className="w-full border-2 border-transparent focus:border-green-500">Option 3</Button>
-                </div>
-              </div>
-              <div className="grid w-full gap-1.5">
-                <h2 className="">Question 3</h2>
-                <div className="space-y-2" id="question-3">
-                  <Button className="w-full border-2 border-transparent focus:border-green-500">Option 1</Button>
-                  <Button className="w-full border-2 border-transparent focus:border-green-500">Option 2</Button>
-                  <Button className="w-full border-2 border-transparent focus:border-green-500">Option 3</Button>
-                </div>
-              </div>
-              <div className="grid w-full gap-1.5">
-                <h2 className="question-4">Question 4</h2>
-                <div className="space-y-2" id="question-4">
-                  <Button className="w-full border-2 border-transparent focus:border-green-500">Option 1</Button>
-                  <Button className="w-full border-2 border-transparent focus:border-green-500">Option 2</Button>
-                  <Button className="w-full border-2 border-transparent focus:border-green-500">Option 3</Button>
-                </div>
-              </div>
-              <Button className="w-full">Submit</Button>
+              <div className="justify-center items-center text-center">
+
+              <Button className="w-60 text-white h-10 bg-green-800 hover:bg-green-700 mt-20">Submit</Button>
+            </div>
+            </div>
             </div>
           </ScrollArea>
     </div>       

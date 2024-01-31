@@ -67,7 +67,7 @@ const  Navbar = () => {
               <picture>
                 {/* <source srcSet="/steliologov1sd.svg" media="(prefers-color-scheme: dark)" /> */}
                 <Image
-                    src="/steliologov1s.svg"
+                    src="/sp.svg"
                     alt="Stelio Logo"
                     width={100}
                     height={100}
