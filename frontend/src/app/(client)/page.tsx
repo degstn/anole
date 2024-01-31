@@ -65,7 +65,7 @@ export default function Home() {
         <span>Facilitate Personal Energy </span>
         </h1>
         <p className="text-3xl tracking-tight max-w-3xl font-medium mb-20 mx-6">
-        <span>Find popular energy incentives near you simply with your address. </span>
+        <span>Find popular energy incentives near you easily with only your address. </span>
         </p>
         <div className='flex'>
         <picture>
