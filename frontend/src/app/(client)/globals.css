@@ -8,6 +8,16 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+::-moz-selection {
+  background: #99b795;
+}
+::-webkit-selection {
+  background: #99b795;
+}
+::selection {
+  background: #99b795;
+}
+
 /* removes dark mode capability */
 /* @media (prefers-color-scheme: dark) {
   :root {

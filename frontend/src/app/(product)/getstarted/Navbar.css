@@ -1,0 +1,15 @@
+.no-scroll {
+    overflow: hidden;
+  }
+
+  .navbar {
+    transition: background-color 0.3s ease-out;
+    background-color: transparent;
+    z-index: 1000;
+  }
+  
+  .navbar.scrolled {
+    background-color: white;
+  }
+
+  

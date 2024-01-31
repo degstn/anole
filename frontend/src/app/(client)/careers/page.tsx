@@ -67,13 +67,11 @@ export default function Page() {
             <hr className="border-black mx-6"/>
             <div className="lg:py-10">
                 <div className="mx-6 flex flex-col items-center justify-center">
-                    <div className="text-5xl font-semibold mt-2 mb-4">
+                    <div className="text-4xl lg:text-5xl font-semibold mt-2 mb-4">
                         Join us in making energy easier.
                     </div>
-                    {/* <div className="text-2xl font-semibold mt-2">
-                        Coming soon.
-                    </div> */}
-                    <div className="w-40"> {/* Set the width of the container */}
+                    
+                    <div> {/* Set the width of the container */}
                         <a
                             href="/careers/open-roles"
                             className="inline-block border border-black text-black px-4 py-2 mt-4 rounded-lg"

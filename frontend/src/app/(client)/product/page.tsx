@@ -26,10 +26,10 @@ export default function Page() {
                     </div>
 
                     <a
-                        href="/product/design"
+                        href="mailto:d@degstn.com"
                         className="inline-block border border-white text-white px-4 py-2 mt-4 rounded-lg"
                     >
-                        Get started
+                        Request access
                     </a>
 
                     <a
@@ -70,7 +70,7 @@ export default function Page() {
                     </div> */}
                     <div className="w-40"> {/* Set the width of the container */}
                         <a
-                            href="https://anole-app.vercel.app"
+                            href="mailto:d@degstn.com"
                             className="inline-block border border-black text-black px-4 py-2 mt-4 rounded-lg"
                         >
                             Request access

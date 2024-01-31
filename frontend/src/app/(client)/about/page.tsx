@@ -11,7 +11,7 @@ export default function Page() {
 
 
     return (
-      <main className="flex min-h-screen flex-col  justify-normal">
+      <main className="flex min-h-screen flex-col justify-normal">
         <div className="mx-6">
     <h1 className="text-6xl font-bold mb-11 mt-48 text-center">Providing energy solutions <br /> for everyday life.</h1>
             <p className="text-2xl text-gray-500 font-regular mt-0 text-center">
