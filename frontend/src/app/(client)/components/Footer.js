@@ -52,7 +52,7 @@ export default function Footer() {
                 href="/product#technolgies"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >
-                Technologies
+                Pricing
               </Link>
             </li>
             <li className="sm:py-0 md:py-0 md:pb-2">
