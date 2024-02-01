@@ -20,9 +20,25 @@ export default function Home() {
       countdownTextsRef.current.splice(randomIndex, 1);
     }, 3000);
 
-
     return () => clearInterval(interval);
   }, []);
+
+  const overviewRef = useRef<HTMLDivElement>(null);
+
+  const otherRef = useRef<HTMLDivElement>(null);
+
+  const otherRef1 = useRef<HTMLDivElement>(null);
+
+
+    const scrollToOverview = () => {
+        overviewRef.current?.scrollIntoView({ behavior: 'smooth' });
+    };
+    const scrollToRef = () => {
+      otherRef.current?.scrollIntoView({ behavior: 'smooth' });
+    };
+    const scrollToRef1 = () => {
+      otherRef1.current?.scrollIntoView({ behavior: 'smooth' });
+    };
 
   return (
     <main className="flex min-h-screen flex-col justify-between">
@@ -34,16 +50,26 @@ export default function Home() {
           backgroundSize: 'cover'
         }}
       >
-        <h1 className="text-6xl lg:text-8xl tracking-tight max-w-5xl font-medium mb-14 mt-52 mx-6">
+        <h1 className="text-6xl lg:text-8xl tracking-tight max-w-5xl font-medium mb-14 mt-72 lg:mt-52  mx-6">
         <span>Energy for </span><span className={styles['countdown-text']}>{countdownText}</span>
         </h1>
+        <div className="flex">
         <a
           href="mailto:d@degstn.com"
-          className="inline-block bg-green-700 border border-green-800 hover:bg-green-800 text-white px-6 py-1 mt-0 mb-20 rounded-lg mx-6"
+          className="inline-block bg-green-700 border border-green-800 hover:bg-green-800 text-white px-6 py-2 mt-0 mb-20 rounded-md mx-6"
         >
           Get started
         </a>
-        <picture>
+        <a
+                        href="#"
+                        onClick={scrollToOverview}
+                        className="hover:underline text-black ml-4 mt-2"
+                    >
+                        Overview
+                        <span className="no-underline" style={{ textDecoration: 'none' }}>&#8595;</span>
+                    </a>
+                    </div>
+        <picture className="pt-60">
           <Image
             src="/steliographic.svg"
             alt="Stelio Logo"
@@ -60,11 +86,11 @@ export default function Home() {
           backgroundSize: 'cover'
         }}
       >
-        <div className="">
-        <h1 className="text-5xl tracking-tight max-w-3xl text-green-800 font-medium mb-2 mt-20 mx-6">
+        <div ref={overviewRef} id="overview">
+        <h1 className="text-3xl lg:text-5xl tracking-tight max-w-3xl text-green-800 font-medium mb-2 mt-20 mx-6">
         <span>Facilitate Personal Energy </span>
         </h1>
-        <p className="text-3xl tracking-tight max-w-3xl font-medium mb-20 mx-6">
+        <p className="text-2xl lg:text-3xl tracking-tight max-w-3xl text-neutral-800 font-medium mb-5 mx-6">
         <span>Find popular energy incentives near you simply with your address. </span>
         </p>
         <div className='flex'>
@@ -76,16 +102,20 @@ export default function Home() {
             height={500}
           />
         </picture>
-        <div className='text-xl font-bold col-span-1'>
-        <p>text</p>
-        <p>will</p>
-        <p>go</p>
-        <p>here</p>
         </div>
+        <p className="text-xl lg:text-3xl tracking-tight max-w-3xl text-neutral-800 font-medium mb-5 mx-6">
+        <span>After a quick location check, a dynamic list of local and popular <span className="font-semibold text-green-900">incentivized base configurations</span> will be provided to start your journey.</span>
+        </p>
+        
 
-        </div>
-        <div className="flex justify-end mt-10">
-          
+        <div ref={otherRef} id="otherRef">
+        <h1 className="text-3xl lg:text-5xl tracking-tight text-teal-800 font-medium mb-2 mt-20 mx-6 text-end">
+        <span>Maximize Value of Energy</span>
+        </h1>
+        <p className="text-2xl lg:text-3xl tracking-tight lg:ml-60 text-neutral-800 font-medium mb-5 mx-6 text-end">
+        <span>Stelio will give you an estimate on your energy bill, setup cost, and yearly energy bill. </span>
+        </p>
+        <div className='flex justify-end'>
         <picture>
           <Image
             src="/g1f.png"
@@ -93,10 +123,20 @@ export default function Home() {
             width={800}
             height={500}
           />
-          </picture>
-          
+        </picture>
         </div>
-        <div className="flex mt-10">
+        <p className="text-xl lg:text-3xl tracking-tight lg:ml-60 text-neutral-800 font-medium mb-5 mx-6 text-end">
+        <span>Once you are ready, <span className="font-semibold text-teal-900">hero eye catcher</span> will be provided to start your journey.</span>
+        </p>
+          
+        <div ref={otherRef1} id="otherRef1">
+        <h1 className="text-3xl lg:text-5xl tracking-tight max-w-3xl text-fuchsia-800 font-medium mb-2 mt-20 mx-6">
+        <span>Prepare for the future</span>
+        </h1>
+        <p className="text-2xl lg:text-3xl tracking-tight max-w-3xl font-medium mb-5 mx-6">
+        <span>Find incentives for your home today to retrofit, or prepare for the future.</span>
+        </p>
+        <div className='flex'>
         <picture>
           <Image
             src="/g0f.png"
@@ -105,11 +145,10 @@ export default function Home() {
             height={500}
           />
         </picture>
-        <div className='text-xl font-bold col-span-1'>
-        <p>where it</p>
-        <p>will</p>
-        <p>eventually</p>
-        <p>go too</p>
+        </div>
+        <p className="text-xl lg:text-3xl tracking-tight  max-w-3xl text-neutral-800 font-medium mb-5 mx-6">
+        <span>Once you are ready, <span className="font-semibold text-fuchsia-900">hero eye catcher</span> will be provided to start your journey.</span>
+        </p>
         </div>
         </div>
 
@@ -122,7 +161,7 @@ export default function Home() {
                     <div className="flex flex-col"> {/* Set the width of the container */}
                         <a
                             href="/careers/open-roles"
-                            className="inline-block border text-white border-green-800 bg-green-700 px-4 py-1 mt-4 rounded-lg"
+                            className="inline-block border text-white border-green-800 bg-green-700 px-4 py-2 mt-4 rounded-md"
                         >
                             Get started
                         </a>
