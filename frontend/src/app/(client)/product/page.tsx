@@ -12,7 +12,7 @@ export default function Page() {
 
     return (
         <main className="flex min-h-screen flex-col items-stretch justify-between">
-            <div className="bg-green-900 py-40 lg:py-28">
+            <div className="bg-green-900 py-28 lg:py-28">
                 <div className='flex justify-end px-6 lg:px-0'>
 
             <picture>
@@ -24,7 +24,7 @@ export default function Page() {
                             />
                         </picture>
                         </div>
-                <div className="mx-6">
+                <div className="mx-6 mb-10">
                     <div className="text-5xl font-regular mt-40 lg:mt-0 mb-6 min-h-fit">
                         <picture>
                             <Image
