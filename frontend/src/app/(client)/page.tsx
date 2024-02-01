@@ -117,6 +117,9 @@ export default function Home() {
         <span>Stelio will give you an estimate on your energy bill, setup cost, and yearly energy bill. </span>
         </p>
         <div className='flex justify-end'>
+        <p className="text-xl lg:text-3xl tracking-tight max-w-sm text-neutral-800 font-medium mt-5 mx-6 text-end">
+        <span>Once you are ready, <span className="font-semibold text-teal-900">hero eye catcher</span> will be provided to start your journey.</span>
+        </p>
         <picture>
           <Image
             src="/g1f.png"
@@ -125,10 +128,9 @@ export default function Home() {
             height={500}
           />
         </picture>
+        
+        
         </div>
-        <p className="text-xl lg:text-3xl tracking-tight lg:ml-60 text-neutral-800 font-medium mb-5 mx-6 text-end">
-        <span>Once you are ready, <span className="font-semibold text-teal-900">hero eye catcher</span> will be provided to start your journey.</span>
-        </p>
           
         <div ref={otherRef1} id="otherRef1">
         <h1 className="text-3xl lg:text-5xl tracking-tight max-w-3xl text-fuchsia-800 font-medium mb-2 mt-20 mx-6">
@@ -146,10 +148,10 @@ export default function Home() {
             height={500}
           />
         </picture>
-        </div>
-        <p className="text-xl lg:text-3xl tracking-tight  max-w-3xl text-neutral-800 font-medium mb-5 mx-6">
+        <p className="text-xl lg:text-3xl tracking-tight max-w-sm text-neutral-800 font-medium mb-5 mx-6">
         <span>Once you are ready, <span className="font-semibold text-fuchsia-900">hero eye catcher</span> will be provided to start your journey.</span>
         </p>
+        </div>
         </div>
         </div>
 
