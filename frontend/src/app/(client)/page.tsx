@@ -6,22 +6,23 @@ import styles from './Home.module.css';
 
 export default function Home() {
   const [countdownText, setCountdownText] = useState('the future');
-  const countdownTextsRef = useRef(['the future', 'amazing things', 'innovation', 'you', 'the home']);
+  const countdownTextsRef = useRef(['the future', 'innovation', 'you', 'the home']);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (countdownTextsRef.current.length === 0) {
-        clearInterval(interval);
-        return;
-      }
-      const randomIndex = Math.floor(Math.random() * countdownTextsRef.current.length);
-      const newText = countdownTextsRef.current[randomIndex];
-      setCountdownText(newText);
-      countdownTextsRef.current.splice(randomIndex, 1);
-    }, 3000);
+      setCurrentIndex(prevIndex => (prevIndex + 1) % countdownTextsRef.current.length);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, []);
+
+  useEffect(() => {
+    setCountdownText(countdownTextsRef.current[currentIndex]);
+  }, [currentIndex]);
+
+
+    
 
   const overviewRef = useRef<HTMLDivElement>(null);
 
@@ -56,27 +57,29 @@ export default function Home() {
         <div className="flex">
         <a
           href="mailto:d@degstn.com"
-          className="inline-block bg-green-700 border border-green-800 hover:bg-green-800 text-white px-6 py-2 mt-0 sm:mb-20 rounded-md mx-6"
+          className="inline-block bg-green-700 border border-green-800 hover:bg-green-800 text-white px-6 py-2 mt-0 sm:mb-20 rounded-md ml-6"
         >
           Get started
         </a>
         <a
                         href="#"
                         onClick={scrollToOverview}
-                        className="hover:underline text-black ml-4 mt-2"
+                        className="hover:underline text-black ml-4 mt-2.5"
                     >
                         Overview
                         <span className="no-underline" style={{ textDecoration: 'none' }}>&#8595;</span>
                     </a>
                     </div>
-        <picture className="absolute sm:pt-60 lg:mt-60">
+                    <div className="flex justify-center">
+        <picture>
           <Image
             src="/steliographic.svg"
-            alt="Stelio Logo"
+            alt="Stelio"
             width={1600}
             height={500}
           />
         </picture>
+        </div>
       </div>
       <div 
         className="flex flex-col min-h-[calc(100vh-44px)] "

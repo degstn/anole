@@ -1,5 +1,5 @@
 .countdown-text {
-    animation: countdownAnimation 3s infinite;
+    animation: countdownAnimation 2s infinite;
   }
   
   @keyframes countdownAnimation {
