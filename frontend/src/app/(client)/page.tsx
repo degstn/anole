@@ -62,15 +62,15 @@ export default function Home() {
           Get started
         </a>
         <a
-                        href="#"
-                        onClick={scrollToOverview}
-                        className="hover:underline text-black ml-4 mt-2.5"
-                    >
-                        Overview
-                        <span className="no-underline" style={{ textDecoration: 'none' }}>&#8595;</span>
-                    </a>
-                    </div>
-                    <div className="flex justify-center">
+            href="#"
+            onClick={scrollToOverview}
+            className="hover:underline text-black ml-4 mt-2.5"
+        >
+            Overview
+            <span className="no-underline" style={{ textDecoration: 'none' }}>&#8595;</span>
+        </a>
+        </div>
+        <div className="flex justify-center pt-60 lg:pt-0">
         <picture>
           <Image
             src="/steliographic.svg"
