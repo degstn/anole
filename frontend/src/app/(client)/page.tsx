@@ -56,7 +56,7 @@ export default function Home() {
         <div className="flex">
         <a
           href="mailto:d@degstn.com"
-          className="inline-block bg-green-700 border border-green-800 hover:bg-green-800 text-white px-6 py-2 mt-0 mb-20 rounded-md mx-6"
+          className="inline-block bg-green-700 border border-green-800 hover:bg-green-800 text-white px-6 py-2 mt-0 sm:mb-20 rounded-md mx-6"
         >
           Get started
         </a>
@@ -69,7 +69,7 @@ export default function Home() {
                         <span className="no-underline" style={{ textDecoration: 'none' }}>&#8595;</span>
                     </a>
                     </div>
-        <picture className="pt-60">
+        <picture className="absolute sm:pt-60 lg:mt-60">
           <Image
             src="/steliographic.svg"
             alt="Stelio Logo"
@@ -102,10 +102,11 @@ export default function Home() {
             height={500}
           />
         </picture>
-        </div>
-        <p className="text-xl lg:text-3xl tracking-tight max-w-3xl text-neutral-800 font-medium mb-5 mx-6">
+        
+        <p className="text-xl lg:text-3xl tracking-tight max-w-sm text-neutral-800 font-medium mt-5 mx-6">
         <span>After a quick location check, a dynamic list of local and popular <span className="font-semibold text-green-900">incentivized base configurations</span> will be provided to start your journey.</span>
         </p>
+        </div>
         
 
         <div ref={otherRef} id="otherRef">
