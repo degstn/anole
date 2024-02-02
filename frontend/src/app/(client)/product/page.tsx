@@ -59,23 +59,7 @@ export default function Page() {
                 </div>
             </div>
 
-            <div ref={overviewRef} id="overview" className="bg-lime-50 lg:py-28">
-                <div className="mx-6">
-                    <div className="text-5xl font-regular mb-6 mt-96">
-                        <picture>
-                            <Image
-                                src="/sp.svg"
-                                alt="Stelio Logo"
-                                width={250}
-                                height={100}
-                            />
-                        </picture>
-                    </div>
-                    <p className="text-2xl font-semibold mt-2">
-                        Coming soon.
-                    </p>
-                </div>
-            </div>   
+            
             <div className="bg-white lg:py-10">
                 <div className="mx-6 mt-14 flex flex-col items-center justify-center">
                     <div className="text-5xl font-semibold mt-2 mb-4">
