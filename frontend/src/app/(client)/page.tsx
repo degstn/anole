@@ -56,7 +56,7 @@ export default function Home() {
         </h1>
         <div className="flex">
         <a
-          href="mailto:d@degstn.com"
+          href="/getstarted"
           className="inline-block bg-green-700 border border-green-800 hover:bg-green-800 text-white px-6 py-2 mt-0 sm:mb-20 rounded-md ml-6"
         >
           Get started
