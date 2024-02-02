@@ -1,6 +1,6 @@
 "use client"
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from "./components/ui/button"
 import { ScrollArea } from "./components/ui/scroll-area"
 import Image from 'next/image'
@@ -10,8 +10,13 @@ import Link from 'next/link';
 
 export default function Page() {
   const updateUserWithId = ""
+  const [opacity, setOpacity] = useState('25');
+  const [selectedButton, setSelectedButton] = useState<string | null>(null);
 
-
+  const [page, setPage] = useState(1);
+  const nextPage = () => {
+    setPage(page + 1);
+  };
 
     return (
         <div className="pt-20 overflow-hidden overscroll-none">
@@ -56,30 +61,46 @@ export default function Page() {
                   <input className="min-w-full h-10 pl-5 bg-neutral-100 shadow-none focus:border-green-500 rounded-sm">
                     </input>
                 </div>
-                <Button className="w-w-full text-white h-10 bg-green-800 hover:bg-green-700 mt-5">Check availability <span></span></Button>
+                <Button className="w-w-full text-white h-10 bg-green-800 hover:bg-green-700 mt-5" onClick={() => setOpacity('100')}>Check availability <span></span></Button>
                 <p className="text-sm text-neutral-500">Stelio will make sure your address is within Stelio's availability range.</p>  
 
 
-                <div className="mt-20 opacity-25">
-                <h2 className="text-3xl font-medium">Most Popular Solutions</h2>
-                <h3 className="pb-10 text-gray-800">Popular solutions in your area or local incentives popular in your area..</h3>
-                <div className="space-y-2 pt-20" id="">
-                  <Button className="min-w-full h-20 border border-gray-500 focus:border-green-500">
-                    Solar
-                    </Button>
-                  <Button className="min-w-full h-20 border border-gray-500 focus:border-green-500">
-                    Heat
-                    </Button>
-                  <Button className="min-w-full h-20 border border-gray-500 focus:border-green-500">
-                    Wind
-                    </Button>
-                </div>
-              </div>
+                <div className={`mt-10 opacity-${opacity}`}>
+    <h2 className="text-3xl font-medium">Most Popular Solutions</h2>
+    <h3 className="pb-10 text-gray-800">Popular solutions in your area or local incentives popular in your area..</h3>
+    <div className="space-y-2 " id="">
+      <Button 
+        className={`min-w-full h-20 border ${selectedButton === 'Solar' ? 'border-2 border-green-700' : 'border border-gray-500'}`} 
+        onClick={() => setSelectedButton('Solar')}
+      >
+        Solar
+      </Button>
+      <Button 
+        className={`min-w-full h-20 border ${selectedButton === 'Heat' ? 'border-2 border-green-700' : 'border border-gray-500'}`} 
+        onClick={() => setSelectedButton('Heat')}
+      >
+        Heat
+      </Button>
+      <Button 
+        className={`min-w-full h-20 border ${selectedButton === 'Wind' ? 'border-2 border-green-700' : 'border border-gray-500'}`} 
+        onClick={() => setSelectedButton('Wind')}
+      >
+        Wind
+      </Button>
+    </div>
+  </div>
               </div>
               <div className="justify-center items-center text-center">
 
-              <Button className="w-60 text-white h-10 bg-green-800 hover:bg-green-700 mt-20">Submit</Button>
-            </div>
+              <Button 
+  className={`min-w-full text-white h-10 bg-green-800 hover:bg-green-700 mt-20 ${!selectedButton ? 'cursor-not-allowed' : ''}`} 
+  disabled={!selectedButton}
+  onClick={nextPage}
+
+>
+  Next
+</Button>          
+</div>
             </div>
             </div>
           </ScrollArea>
