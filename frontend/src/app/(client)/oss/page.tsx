@@ -1,10 +1,15 @@
-"use client"
-
 import React from 'react';
 import Image from 'next/image'
 import Link from 'next/link';
 
-export default function Page() {
+import Container from "../components/container";
+import { MoreStories } from "../components/more-stories";
+import { getAllPosts } from "../lib/api";
+
+export default async function Page() {
+    const allPosts = getAllPosts();
+
+    const morePosts = (await allPosts).slice();
 
     return (
       <main className="flex min-h-screen flex-col justify-center">
@@ -13,7 +18,7 @@ export default function Page() {
             
             <div className="flex flex-col justify-start">
             <h2 className="text-3xl text-black font-semibold mt-10 mb-5 text-center">OSS</h2>
-            <h2 className="text-2xl lg:mx-72 text-center">Stelio was built around the idea that clean, renewable energy should be as accessible to users as for developers. Therefore, the source of Stelio is fully open source for contribution and reference.</h2>
+            <h2 className="text-2xl lg:mx-56 text-center">Stelio was built around the idea that clean, renewable energy should be as accessible to users as for developers. Therefore, the source of Stelio is fully open source for contribution and reference.</h2>
             </div>
             <div className="flex justify-center">
               <picture>
@@ -24,18 +29,25 @@ export default function Page() {
                     height={800}
                 />
               </picture>
+              
             </div>
+            <div className="flex justify-center mt-3">
+            <p className="text-lg font-medium pr-10">Contribute to the Stelio client and product Git repositories.</p>
+
+            <Link href="https://github.com/degstn/anole">
+                <span className=" py-2 px-10 text-white bg-black rounded-md mt-5">Git</span>
+                  </Link>
+                  </div>
             <h2 className="text-3xl text-black font-semibold mt-10 text-start">Featured Research</h2>
             <div className="mt-2 mb-20">
                 <Link href={`/careers/open-roles`}>
                     <span className="underline">View all research</span>
                 </Link>
             </div>
-            <div className="grid grid-cols-2 gap-10 justify-center text-center pb-10">
-            <p className="border-2 border-black py-60">featuredContent_01</p>
-            <p className="border-2 border-black py-60">featuredContent_02</p>
-            <p className="border-2 border-black py-60">featuredContent_03</p>
-            <p className="border-2 border-black py-60">featuredContent_04</p>
+            <div className="mb-10">
+            <Container>
+            {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+            </Container>
             </div>
             <hr className="border-black"/>
             <div className="lg:py-10">
