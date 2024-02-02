@@ -70,11 +70,11 @@ export default function Home() {
             <span className="no-underline" style={{ textDecoration: 'none' }}>&#8595;</span>
         </a>
         </div>
-        <div className="flex justify-center pt-60 lg:pt-0">
+        <div className="flex  pt-60 lg:pt-0 object-bottom">
         <picture>
           <Image
             src="/steliographic.svg"
-            alt="Stelio"
+            alt=""
             width={1600}
             height={500}
           />
@@ -99,14 +99,14 @@ export default function Home() {
         <div className='flex'>
         <picture>
           <Image
-            src="/g0f.png"
-            alt="gs0"
-            width={800}
-            height={500}
+            src="/s1.png"
+            alt=""
+            width={700}
+            height={400}
           />
         </picture>
         
-        <p className="text-xl lg:text-3xl tracking-tight max-w-sm text-neutral-800 font-medium mt-5 mx-6">
+        <p className="text-xl lg:text-3xl tracking-tight max-w-sm text-neutral-800 font-medium mt-32 mx-6">
         <span>After a quick location check, a dynamic list of local and popular <span className="font-semibold text-green-900">incentivized base configurations</span> will be provided to start your journey.</span>
         </p>
         </div>
@@ -120,8 +120,8 @@ export default function Home() {
         <span>Stelio will give you an estimate on your energy bill, setup cost, and yearly energy bill. </span>
         </p>
         <div className='flex justify-end'>
-        <p className="text-xl lg:text-3xl tracking-tight max-w-sm text-neutral-800 font-medium mt-5 mx-6 text-end">
-        <span>Once you are ready, <span className="font-semibold text-teal-900">hero eye catcher</span> will be provided to start your journey.</span>
+        <p className="text-xl lg:text-3xl tracking-tight max-w-sm text-neutral-800 font-medium mt-32 mx-6 text-end">
+        <span>Help <span className="font-semibold text-teal-900">visualize future costs</span> and changes in your bills, keeping you in the know about your expenses and what you can save.</span>
         </p>
         <picture>
           <Image
@@ -151,8 +151,8 @@ export default function Home() {
             height={500}
           />
         </picture>
-        <p className="text-xl lg:text-3xl tracking-tight max-w-sm text-neutral-800 font-medium mb-5 mx-6">
-        <span>Once you are ready, <span className="font-semibold text-fuchsia-900">hero eye catcher</span> will be provided to start your journey.</span>
+        <p className="text-xl lg:text-3xl tracking-tight max-w-sm text-neutral-800 font-medium mt-32 mx-6">
+        <span>Discover the saving and benefits of retrofitting and upgrading to <span className="font-semibold text-fuchsia-900">increase the efficiency</span> of electricity in your household.</span>
         </p>
         </div>
         </div>
