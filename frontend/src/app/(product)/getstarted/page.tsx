@@ -9,7 +9,8 @@ import Link from 'next/link';
 
 
 export default function Page() {
-      
+  const updateUserWithId = ""
+
 
 
     return (
@@ -21,7 +22,7 @@ export default function Page() {
               alt=""
               className="absolute inset-0 object-cover  w-full h-fit p-6"
               height="1000"
-              src="/IMG_0938.JPG"
+              src="/toolw.png"
               style={{
                 aspectRatio: "960/1080",
                 objectFit: "cover",
@@ -47,16 +48,21 @@ export default function Page() {
                 <h2 className="text-3xl font-medium">Choose a base configuration</h2>
                 <h3 className="pb-10 text-gray-800">You can add others later, start by choosing one.</h3>
                 <div className="space-y-2 " id="question-1">
-                  <p className="text-md text-slate-800">Home address</p>
-                  <Button className="min-w-full h-10 bg-neutral-100 shadow-none focus:border-green-500">
-                    address
-                    </Button>
-                <p className="text-md text-slate-800">Other input</p>  
-                  <Button className="min-w-full h-10 bg-neutral-100 shadow-none focus:border-green-500">
-                    io
-                    </Button>
+                  <p className="text-md font-medium text-neutral-600">Home address</p>
+                  <input className="min-w-full h-10 pl-5 bg-neutral-100 shadow-none focus:border-green-500 rounded-sm">
+                    </input>
+                <p className="text-md font-medium text-neutral-600 ">Residents</p>  
+                <p className="text-sm text-neutral-500">Please provide the amount of residents residing at this address.</p>  
+                  <input className="min-w-full h-10 pl-5 bg-neutral-100 shadow-none focus:border-green-500 rounded-sm">
+                    </input>
                 </div>
+                <Button className="w-w-full text-white h-10 bg-green-800 hover:bg-green-700 mt-5">Check availability <span></span></Button>
+                <p className="text-sm text-neutral-500">Stelio will make sure your address is within Stelio's availability range.</p>  
 
+
+                <div className="mt-20 opacity-25">
+                <h2 className="text-3xl font-medium">Most Popular Solutions</h2>
+                <h3 className="pb-10 text-gray-800">Popular solutions in your area or local incentives popular in your area..</h3>
                 <div className="space-y-2 pt-20" id="">
                   <Button className="min-w-full h-20 border border-gray-500 focus:border-green-500">
                     Solar
@@ -68,6 +74,7 @@ export default function Page() {
                     Wind
                     </Button>
                 </div>
+              </div>
               </div>
               <div className="justify-center items-center text-center">
 
