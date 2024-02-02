@@ -166,7 +166,7 @@ export default function Home() {
                     
                     <div className="flex flex-col"> {/* Set the width of the container */}
                         <a
-                            href="/careers/open-roles"
+                            href="/getstarted"
                             className="inline-block border text-white border-green-800 bg-green-700 px-4 py-2 mt-4 rounded-md"
                         >
                             Get started
