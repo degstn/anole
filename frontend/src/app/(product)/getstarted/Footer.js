@@ -21,7 +21,6 @@ export default function Footer() {
               />
               </picture>
             </span>
-            
           </Link>
         </div>
         <div className="col-span-1 lg:col-span-3">

@@ -10,6 +10,8 @@ export default function Page() {
         overviewRef.current?.scrollIntoView({ behavior: 'smooth' });
     };
 
+    const disabled = true;
+
     return (
         <main className="flex min-h-screen flex-col items-stretch justify-between">
             <div className="bg-white py-40 lg:py-28">
@@ -34,41 +36,16 @@ export default function Page() {
                         </p>
                     </div>
 
-                    <a
-                        href="/product/enterprise/getnotified"
+                    <button
                         className="inline-block border border-black text-black px-4 py-2 mt-4 rounded-lg"
+                        disabled={!disabled}
+                        style={{ opacity: '0.25' }}
+                        
                     >
-                        Get notified
-                    </a>
-
-                    <a
-                        href="#"
-                        onClick={scrollToOverview}
-                        className="hover:underline text-black ml-4"
-                    >
-                        Overview
-                        <span className="no-underline" style={{ textDecoration: 'none' }}>&#8595;</span>
-                    </a>
+                        Enterprise coming soon
+                    </button>
                 </div>
             </div>
-
-            <div ref={overviewRef} id="overview" className="bg-lime-50 lg:py-28">
-                <div className="mx-6">
-                    <div className="text-5xl font-regular mb-6 mt-96">
-                        <picture>
-                            <Image
-                                src="/sp.svg"
-                                alt="Stelio Logo"
-                                width={250}
-                                height={100}
-                            />
-                        </picture>
-                    </div>
-                    <p className="text-2xl font-semibold mt-2">
-                        Coming soon.
-                    </p>
-                </div>
-            </div>   
             <div className="bg-white lg:py-10">
                 <div className="mx-6 mt-14 flex flex-col items-center justify-center">
                     <div className="text-5xl font-semibold mt-2 mb-4">
