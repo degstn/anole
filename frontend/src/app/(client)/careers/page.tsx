@@ -19,7 +19,7 @@ export default function Page() {
         >
             View open roles
         </a>
-        <a href="#"
+        <a href="/about"
            onClick={learnMore}
            className="inline-block border border-black text-black px-4 py-2 mx-2 rounded-lg"
         >
