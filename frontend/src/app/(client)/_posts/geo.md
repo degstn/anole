@@ -2,7 +2,7 @@
 title: "Geothermal Energy"
 excerpt: "Geothermal energy has long been constrained by the necessity of high-temperature resources for efficient power generation."
 coverImage: "/geo.png"
-date: "2023-12-8T05:35:07.322Z"
+date: "2023-12-08T05:35:07.322Z"
 author:
   name: Stelio
   picture: "/assets/blog/authors/jj.jpeg"
