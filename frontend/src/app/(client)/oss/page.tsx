@@ -39,12 +39,8 @@ export default async function Page() {
                   </Link>
                   </div>
             <h2 className="text-3xl text-black font-semibold mt-10 text-start">Featured Research</h2>
-            <div className="mt-2 mb-20">
-                <Link href={`/careers/open-roles`}>
-                    <span className="underline">View all research</span>
-                </Link>
-            </div>
-            <div className="mb-10">
+            
+            <div className="mt-10 mb-10">
             <Container>
             {morePosts.length > 0 && <MoreStories posts={morePosts} />}
             </Container>
