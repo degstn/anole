@@ -9,59 +9,90 @@ import Link from 'next/link';
 
 
 export default function Page() {
-  const updateUserWithId = ""
+
+  const [residentCount, setResidentCount] = useState(0);
+  const [address, setAddress] = useState('');
+
+  // Modify your button click handler
+  const handleButtonClick = () => {
+    // Save user's inputs to local storage
+    localStorage.setItem('address', address);
+    localStorage.setItem('residentCount', residentCount.toString());
+
+    // Navigate to the next page
+    nextPage();
+  };
+
+  const updateUserWithId = '';
   const [opacity, setOpacity] = useState('25');
   const [selectedButton, setSelectedButton] = useState<string | null>(null);
 
   const [page, setPage] = useState(1);
+
   const nextPage = () => {
-    setPage(page + 1);
+    // Save user's inputs to local storage
+    localStorage.setItem('address', address);
+    localStorage.setItem('residentCount', residentCount.toString());
+
+    // Navigate to the next page
+    window.location.href = '/getstarted/results';
   };
 
-    return (
-        <div className="pt-20 overflow-hidden overscroll-none">
-        <div key="1" className="grid grid-cols-2 ">
-          <div className="relative">
-            <picture className="rounded-lg">
+  return (
+    <div className="pt-20 overflow-hidden overscroll-none">
+      <div key="1" className="grid grid-cols-2 ">
+        <div className="relative">
+          <picture className="rounded-lg">
             <Image
               alt=""
               className="absolute inset-0 object-cover  w-full h-fit p-6"
               height="1000"
               src="/toolw.png"
               style={{
-                aspectRatio: "960/1080",
-                objectFit: "cover",
+                aspectRatio: '960/1080',
+                objectFit: 'cover',
               }}
               width="960"
             />
-            </picture>
-          </div>
-          <ScrollArea className="max-h-screen min-w-full">
-            <div className="space-y-6">
-              <div className="w-full">
-                <Button asChild>
+          </picture>
+        </div>
+        <ScrollArea className="max-h-screen min-w-full">
+          <div className="space-y-6">
+            <div className="w-full">
+              <Button asChild>
                 <Link className="text-md bg-transparent shadow-none hover:bg-neutral-100" href="/">
-                    <Chevron/> Back
+                  <Chevron /> Back
                 </Link>
-                </Button>
-                <div />
-              </div>
-              <div className="p-6">
-
+              </Button>
+              <div />
+            </div>
+            <div className="p-6">
               <div className="grid w-full gap-1.5">
-                
                 <h2 className="text-3xl font-medium">Choose a base configuration</h2>
                 <h3 className="pb-10 text-gray-800">You can add others later, start by choosing one.</h3>
                 <div className="space-y-2 " id="question-1">
                   <p className="text-md font-medium text-neutral-600">Home address</p>
-                  <input className="min-w-full h-10 pl-5 bg-neutral-100 shadow-none focus:border-green-500 rounded-sm">
-                    </input>
-                <p className="text-md font-medium text-neutral-600 ">Residents</p>  
-                <p className="text-sm text-neutral-500">Please provide the amount of residents residing at this address.</p>  
-                  <input className="min-w-full h-10 pl-5 bg-neutral-100 shadow-none focus:border-green-500 rounded-sm">
-                    </input>
+                  <input
+                    className="min-w-full h-10 pl-5 bg-neutral-100 shadow-none focus:border-green-500 rounded-sm"
+                    value={address}
+                    onChange={(e) => setAddress(e.target.value)}
+                  />
+                  <p className="text-md font-medium text-neutral-600 ">Residents</p>
+                  <p className="text-sm text-neutral-500">Please provide the amount of residents residing at this address.</p>
+                  <input
+                    className="min-w-full h-10 pl-5 bg-neutral-100 shadow-none focus:border-green-500 rounded-sm"
+                    type="number"
+                    value={residentCount}
+                    onChange={(e) => setResidentCount(parseInt(e.target.value) || 0)}
+                  />
                 </div>
-                <Button className="w-w-full text-white h-10 bg-green-800 hover:bg-green-700 mt-5" onClick={() => setOpacity('100')}>Check availability <span></span></Button>
+                <Button
+                  className={`w-w-full text-white h-10 bg-green-800 hover:bg-green-700 mt-5 opacity-${opacity}`}
+                  onClick={() => setOpacity('100')}
+                  disabled={!address || residentCount === 0}
+                >
+                  Check availability <span></span>
+                </Button>
                 <p className="text-sm text-neutral-500">Stelio will make sure your address is within Stelio's availability range.</p>  
 
 

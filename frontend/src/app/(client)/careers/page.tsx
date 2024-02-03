@@ -60,10 +60,6 @@ export default function Page() {
             </div>
                            
         </div>
-            <section ref={lrRef} id="overview" className="w-screen py-10 mt-10">
-                <h2 className="text-3xl font-semibold text-center">Our Community</h2>
-                <p className="text-center mt-4 mb-52">Sections will be added for staging.</p>
-            </section>  
             <hr className="border-black mx-6"/>
             <div className="lg:py-10">
                 <div className="mx-6 flex flex-col items-center justify-center">
