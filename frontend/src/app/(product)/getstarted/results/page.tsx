@@ -16,10 +16,10 @@ useEffect(() => {
 }, []);
 
   return (
-    <main className="flex text-center items-center justify-center">
+    <div className="flex text-center items-center justify-center">
       <h1>Next Page</h1>
       <p>Address: {address}</p>
       <p>Resident Count: {residentCount}</p>
-    </main>
+    </div>
   );
 }

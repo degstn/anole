@@ -69,7 +69,8 @@ export default function Page() {
             <div className="p-6">
               <div className="grid w-full gap-1.5">
                 <h2 className="text-3xl font-medium">Choose a base configuration</h2>
-                <h3 className="pb-10 text-gray-800">You can add others later, start by choosing one.</h3>
+                <h3 className="text-gray-800">You can add others later, start by choosing one.</h3>
+                <h3 className="text-xs pb-10 text-gray-600">Note: This is just a demonstration and does not fully function.</h3>
                 <div className="space-y-2 " id="question-1">
                   <p className="text-md font-medium text-neutral-600">Home address</p>
                   <input
