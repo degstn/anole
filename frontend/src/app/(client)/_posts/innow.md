@@ -2,7 +2,7 @@
 title: "Innovative Wind Turbine Design"
 excerpt: "Abstract: This study presents the design and testing of a new wind turbine capable of operating efficiently in low-wind conditions, common in many parts of the world."
 coverImage: "/wind.png"
-date: "2024-01-01T05:35:07.322Z"
+date: "2024-01-10T05:35:07.322Z"
 author:
   name: Stelio
   picture: "/assets/blog/authors/jj.jpeg"
