@@ -129,14 +129,7 @@ export default function Footer() {
                 About
               </Link>
             </li>
-            <li className="sm:py-0 md:py-0 md:pb-2">
-              <Link
-                href="/customer-stories"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
-              >
-                Customer Stories
-              </Link>
-            </li>
+            
             <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
                 href="/careers"
@@ -177,14 +170,6 @@ export default function Footer() {
         </div>
       <div className="col-span-1 lg:col-span-2">
         <ul className="flex flex-row flex-initial md:flex-1">
-        <li className="mr-4">
-            <Link
-              href="/policies/"
-              className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
-            >
-              Terms
-            </Link>
-          </li>
           <li className="mr-4">
             <Link
               href="/policies/privacy-policy"
@@ -195,15 +180,7 @@ export default function Footer() {
           </li>
           <li className="mr-4">
             <Link
-              href="/sitemap.xml"
-              className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
-            >
-              Sitemap  
-            </Link>
-          </li>
-          <li className="mr-4">
-            <Link
-              href="/contact"
+              href="mailto:contact@stelio.ai"
               className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
             >
               Contact  
