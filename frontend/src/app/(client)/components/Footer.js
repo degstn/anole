@@ -49,14 +49,6 @@ export default function Footer() {
             </li>
             <li className="sm:py-0 md:py-0 md:pb-2">
               <Link
-                href="/product#technolgies"
-                className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
-              >
-                Pricing
-              </Link>
-            </li>
-            <li className="sm:py-0 md:py-0 md:pb-2">
-              <Link
                 href="/product/enterprise"
                 className="text-gray-500 transition duration-150 ease-in-out hover:text-gray-500 hover:underline"
               >

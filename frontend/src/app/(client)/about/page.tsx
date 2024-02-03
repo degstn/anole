@@ -55,8 +55,8 @@ export default function Page() {
         <h2 className="text-sm">We are rooted in a culture of mutual trust and respect. Our company operates on the principles of transparency, integrity, and fairness, building strong relationships with customers, employees, and stakeholders. We believe in honest communication and ethical practices, ensuring that trust is at the heart of everything we do. This environment of trust empowers us to make decisions that are not only beneficial for our business but also for the communities we serve.</h2>
         </div>
         <div>
-        <h2 className="text-xl font-semibold pb-5">03 <br/> United in Energy</h2>
-        <h2 className="text-sm">Collaboration is the cornerstone of our operational philosophy. We recognize that delivering efficient and sustainable energy solutions is a collective effort. Although diverse in expertise, we are united under one goal: to provide exceptional energy services. This unity in purpose and action enables us to meet our commitments to our customers and the environment.</h2>
+        <h2 className="text-xl font-semibold pb-5">03 <br/> United for Energy</h2>
+        <h2 className="text-sm">Collaboration is the cornerstone of our operational philosophy. We recognize that delivering efficient and sustainable energy solutions is a collective effort. Although diverse in expertise, we are united under one goal: to provide exceptional energy services. Our team's dedication enables us to meet our customers needs and the environment.</h2>
        </div>
        <div>
         <h2 className="text-xl font-semibold pb-5">04 <br/> Practical Innovation</h2>
