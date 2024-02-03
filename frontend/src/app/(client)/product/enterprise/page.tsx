@@ -14,7 +14,6 @@ export default function Page() {
         <main className="flex min-h-screen flex-col items-stretch justify-between">
             <div className="bg-white py-40 lg:py-28">
                 <div className='flex justify-end px-6 lg:px-0'>
-
             <picture className="border border-zinc-400 rounded-md">
                             <Image
                                 src="/g1f.png"

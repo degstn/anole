@@ -28,14 +28,7 @@ export default function Page() {
             Learn more
         </a>
         </div>        
-        <div className="flex flex-col justify-start">
-        <h2 className="text-3xl text-black font-semibold mt-10 mb-5 text-start">Our Purpose</h2>
-        <h2 className="text-2xl lg:mr-80 sm:mr-0">As energy is a touchy subject, Stelio is comitted to making energy provision as easy and accomplishable all with the click of a button.</h2>
-
-        </div>
-        <div className="flex flex-col justify-start">
-        <h2 className="text-3xl text-black font-semibold mt-10 mb-5 text-start">Values</h2>
-        </div>
+        
         </div>
         
     </main>

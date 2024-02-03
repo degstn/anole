@@ -60,7 +60,7 @@ export default function Page() {
        </div>
        <div>
         <h2 className="text-xl font-semibold pb-5">04 <br/> Practical Innovation</h2>
-        <h2 className="text-sm">We believe in the power of simple, effective solutions. Our focus is on practical innovation and statistics - blending tried-and-true methods with creative, forward-thinking strategies. We value real-world results, learning through doing, and adapting based on what works. This approach applies to our technological advancements, customer service strategies, and our efforts in sustainability. By balancing practicality with innovation, Stelio aims to not only meet and exceed current energy needs but also anticipate and shape future trends.</h2>
+        <h2 className="text-sm">We believe in the power of simple, effective solutions. Our focus is on practical innovation and statistics – blending tried-and-true methods with creative, forward-thinking strategies. We value real-world results, learning through doing, and adapting based on what works. This approach applies to our technological advancements, customer service strategies, and our efforts in sustainability. By balancing practicality with innovation, Stelio aims to not only meet and exceed current energy needs but also anticipate and shape future trends.</h2>
         </div>
         </div>
         </div>
