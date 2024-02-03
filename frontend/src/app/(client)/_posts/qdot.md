@@ -2,7 +2,7 @@
 title: "Quantum Dot-Integrated Solar Panels"
 excerpt: "Abstract: Recent advancements in solar technology have led to the development of a novel quantum dot-integrated photovoltaic (PV) cell that significantly increases the efficiency of solar energy conversion."
 coverImage: "/solar.png"
-date: "2024-01-26T05:35:07.322Z"
+date: "2024-01-8T05:35:07.322Z"
 author:
   name: Stelio
   picture: "/assets/blog/authors/jj.jpeg"

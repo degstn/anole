@@ -2,7 +2,7 @@
 title: "Micro-Hydro Generator Integration"
 excerpt: "Abstract: This study presents the design and testing of a new wind turbine capable of operating efficiently in low-wind conditions, common in many parts of the world."
 coverImage: "/water.png"
-date: "2024-01-26T05:35:07.322Z"
+date: "2023-12-29T05:35:07.322Z"
 author:
   name: Stelio
   picture: "/assets/blog/authors/jj.jpeg"
