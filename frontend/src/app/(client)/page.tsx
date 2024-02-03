@@ -75,7 +75,7 @@ export default function Home() {
           <Image
             src="/steliographic.svg"
             alt=""
-            width={1600}
+            width={4000}
             height={500}
           />
         </picture>
