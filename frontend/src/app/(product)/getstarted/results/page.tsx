@@ -45,7 +45,7 @@ export default function Page() {
           <div className="space-y-6">
             <div className="w-full">
               <Button asChild>
-                <Link className="text-md bg-transparent shadow-none hover:bg-neutral-100" href="/">
+                <Link className="text-md bg-transparent shadow-none hover:bg-neutral-100" href="/getstarted">
                   <Chevron /> Back
                 </Link>
               </Button>
